@@ -38,8 +38,8 @@ The code uses seasons 2003-04 through 2025-26. It deliberately selects LeBron's 
 - Cache the 23-row dataset locally.
 - Estimate the PMF with normalized value counts.
 - Estimate the CDF with a cumulative sum of the PMF.
-- Report the empirical mean, mode, and $P(X \leq 8)$.
-- Plot the PMF and CDF side by side.
+- Report the empirical mean, median, mode, $P(X \leq 9)$, and $P(X = 12)$.
+- Plot the PMF and CDF side by side, highlighting $k=9$ and $k=12$.
 - Explain why this is a descriptive baseline rather than a production forecast.
 
 ## Closing message

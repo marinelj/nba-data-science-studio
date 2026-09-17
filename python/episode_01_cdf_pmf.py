@@ -97,8 +97,20 @@ def empirical_distribution(fgm: pd.Series) -> tuple[pd.Series, pd.Series]:
 def plot_distribution(pmf: pd.Series, cdf: pd.Series) -> None:
     """Plot point probabilities and cumulative probabilities side by side."""
     figure, axes = plt.subplots(1, 2, figsize=(12, 4))
+    highlights = {9: "seagreen", 12: "crimson"}
 
     axes[0].bar(pmf.index, pmf.values, color="steelblue")
+    for k, color in highlights.items():
+        axes[0].bar(k, pmf.loc[k], color=color, edgecolor="black", zorder=3)
+        axes[0].annotate(
+            f"k = {k}\nP(X = {k}) = {pmf.loc[k]:.1%}",
+            xy=(k, pmf.loc[k]),
+            xytext=(-52 if k == 9 else 8, 26),
+            textcoords="offset points",
+            arrowprops={"arrowstyle": "->", "color": color},
+            color=color,
+            fontsize=9,
+        )
     axes[0].set(
         title="Empirical PMF: LeBron Season-Debut FGM",
         xlabel="Field goals made",
@@ -107,6 +119,18 @@ def plot_distribution(pmf: pd.Series, cdf: pd.Series) -> None:
 
     axes[1].step(cdf.index, cdf.values, where="post", color="darkorange")
     axes[1].scatter(cdf.index, cdf.values, color="darkorange", s=24)
+    for k, color in highlights.items():
+        axes[1].axvline(k, color=color, linestyle="--", alpha=0.7)
+        axes[1].scatter(k, cdf.loc[k], color=color, edgecolor="black", s=75, zorder=3)
+        axes[1].annotate(
+            f"k = {k}\nP(X ≤ {k}) = {cdf.loc[k]:.1%}",
+            xy=(k, cdf.loc[k]),
+            xytext=(-76 if k == 9 else -104, -48),
+            textcoords="offset points",
+            arrowprops={"arrowstyle": "->", "color": color},
+            color=color,
+            fontsize=9,
+        )
     axes[1].set(
         title="Empirical CDF: P(FGM ≤ k)",
         xlabel="k field goals made",
@@ -125,18 +149,22 @@ def main() -> None:
     opening_games = load_or_fetch_data()
     pmf, cdf = empirical_distribution(opening_games["fgm"])
 
-    threshold = 8
+    baseline_k = 9
     mean_fgm = opening_games["fgm"].mean()
     mode_fgm = int(pmf.idxmax())
-    probability_at_most_threshold = opening_games["fgm"].le(threshold).mean()
+    probability_at_most_baseline = cdf.loc[baseline_k]
+    probability_exactly_mode = pmf.loc[mode_fgm]
+    probability_at_most_mode = cdf.loc[mode_fgm]
 
     print(opening_games.to_string(index=False))
     print(f"\nEmpirical mean FGM: {mean_fgm:.2f}")
     print(f"Empirical mode FGM: {mode_fgm}")
     print(
-        f"P(FGM <= {threshold}) from the empirical CDF: "
-        f"{probability_at_most_threshold:.1%}"
+        f"P(FGM <= {baseline_k}) from the empirical CDF: "
+        f"{probability_at_most_baseline:.1%}"
     )
+    print(f"P(FGM = {mode_fgm}) from the empirical PMF: {probability_exactly_mode:.1%}")
+    print(f"P(FGM <= {mode_fgm}) from the empirical CDF: {probability_at_most_mode:.1%}")
 
     plot_distribution(pmf, cdf)
 

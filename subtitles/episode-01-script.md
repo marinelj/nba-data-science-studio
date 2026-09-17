@@ -30,9 +30,9 @@ After the loop, the rows become a new DataFrame. We sort it chronologically and 
 
 We are ready to estimate the empirical distribution. The distribution function receives the FGM series. First, we create support from the minimum to maximum count. This includes every integer, even if one was never observed. Value counts tells us how often each FGM occurred. With normalize set to true, frequencies become probabilities. We sort the values and reindex them onto the full support. Unobserved counts receive probability zero, not missing values.
 
-The PMF is complete, so the CDF is its cumulative sum. Each CDF value includes that count and everything below it. Next, we calculate three summaries for interpretation. The mean gives the historical average season-debut FGM. The PMF mode gives the most frequently observed count. The CDF estimates the probability of eight or fewer makes. These are empirical summaries, not a deterministic prediction.
+The PMF is complete, so the CDF is its cumulative sum. Each CDF value includes that count and everything below it. Next, we calculate three summaries for interpretation. The mean gives the historical average season-debut FGM. The PMF mode gives the most frequently observed count. The CDF shows a 52.2 percent chance of nine or fewer makes. These are empirical summaries, not a deterministic prediction.
 
-Finally, Matplotlib creates two side-by-side charts. The left chart uses bars to display the PMF. The right chart uses steps to display the CDF. Read the left chart as probability of exactly each count. Read the right chart as probability up to each count.
+Finally, Matplotlib creates two charts and highlights k equals 9 and 12. Nine is the median baseline, while twelve is the PMF mode. At k equals 9, the CDF is 52.2 percent. At k equals 12, the CDF is 95.7 percent. The PMF at twelve is 21.7 percent, the largest exact probability.
 
 ## 06:30-07:00 — Closing
 
