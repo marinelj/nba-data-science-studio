@@ -1,0 +1,12 @@
+.DS_Store
+.venv/
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+data/*.csv
+!data/README.md
+!data/lebron_season_debut_fgm_2005_2025.csv
+videos/*.mp4
+videos/*.mov
+videos/*.mkv
+!videos/README.md

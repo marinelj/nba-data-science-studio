@@ -1,0 +1,335 @@
+1
+00:00:00,000 --> 00:00:05,000
+Today, we will use NBA data to learn two probability concepts.
+
+2
+00:00:05,000 --> 00:00:10,000
+Our question is about LeBron James and his next season debut.
+
+3
+00:00:10,000 --> 00:00:15,000
+How many field goals might he make in the 2026-27 opener?
+
+4
+00:00:15,000 --> 00:00:20,000
+We will use his previous 21 season-debut performances as evidence.
+
+5
+00:00:20,000 --> 00:00:25,000
+The goal is not to guarantee one exact prediction.
+
+6
+00:00:25,000 --> 00:00:30,000
+It is to understand the PMF, PDF, and CDF clearly.
+
+7
+00:00:30,000 --> 00:00:35,000
+First, define a random variable called X.
+
+8
+00:00:35,000 --> 00:00:40,000
+X is LeBron's field goals made in a season debut.
+
+9
+00:00:40,000 --> 00:00:45,000
+Each historical season gives us one observed value of X.
+
+10
+00:00:45,000 --> 00:00:50,000
+A probability distribution describes how likely different values are.
+
+11
+00:00:50,000 --> 00:00:55,000
+For a continuous variable, we often describe a PDF.
+
+12
+00:00:55,000 --> 00:01:00,000
+PDF means probability density function, not point probability.
+
+13
+00:01:00,000 --> 00:01:05,000
+Probability comes from the area under a PDF over an interval.
+
+14
+00:01:05,000 --> 00:01:10,000
+But field goals made can only be whole-number counts.
+
+15
+00:01:10,000 --> 00:01:15,000
+Therefore, X is discrete rather than continuous.
+
+16
+00:01:15,000 --> 00:01:20,000
+The correct discrete counterpart of a PDF is a PMF.
+
+17
+00:01:20,000 --> 00:01:25,000
+A PMF assigns a probability to every possible count.
+
+18
+00:01:25,000 --> 00:01:30,000
+All PMF probabilities must add up to one.
+
+19
+00:01:30,000 --> 00:01:35,000
+The CDF answers a different but related question.
+
+20
+00:01:35,000 --> 00:01:40,000
+It gives the probability that X is at most k.
+
+21
+00:01:40,000 --> 00:01:45,000
+Formally, F of k equals P of X less than or equal to k.
+
+22
+00:01:45,000 --> 00:01:50,000
+We compute it by cumulatively adding PMF probabilities.
+
+23
+00:01:50,000 --> 00:01:55,000
+So a CDF never decreases and eventually reaches one.
+
+24
+00:01:55,000 --> 00:02:00,000
+The PMF means exactly; the CDF means at most.
+
+25
+00:02:00,000 --> 00:02:05,000
+Now let us turn this idea into an NBA example.
+
+26
+00:02:05,000 --> 00:02:10,000
+We use 21 completed seasons, from 2005-06 through 2025-26.
+
+27
+00:02:10,000 --> 00:02:15,000
+The target is LeBron's season debut in 2026-27.
+
+28
+00:02:15,000 --> 00:02:20,000
+For each season, we select his first regular-season appearance.
+
+29
+00:02:20,000 --> 00:02:25,000
+That may differ from his team's scheduled opening night.
+
+30
+00:02:25,000 --> 00:02:30,000
+This choice avoids treating a missed opener as zero field goals.
+
+31
+00:02:30,000 --> 00:02:35,000
+Let us open the Jupyter notebook and start with the imports.
+
+32
+00:02:35,000 --> 00:02:40,000
+We import pandas, Matplotlib, Path, sleep, and nba_api.
+
+33
+00:02:40,000 --> 00:02:45,000
+LeBron's NBA player identifier is stored as a constant.
+
+34
+00:02:45,000 --> 00:02:50,000
+We also define the first year and number of seasons.
+
+35
+00:02:50,000 --> 00:02:55,000
+The season-label function converts 2005 into 2005-06.
+
+36
+00:02:55,000 --> 00:03:00,000
+A list comprehension generates all 21 season labels.
+
+37
+00:03:00,000 --> 00:03:05,000
+Next, we define a function that fetches each season debut.
+
+38
+00:03:05,000 --> 00:03:10,000
+The rows list will collect one dictionary per season.
+
+39
+00:03:10,000 --> 00:03:15,000
+We loop through the season labels in chronological order.
+
+40
+00:03:15,000 --> 00:03:20,000
+PlayerGameLog requests LeBron's game log for one season.
+
+41
+00:03:20,000 --> 00:03:25,000
+We explicitly restrict the request to regular-season games.
+
+42
+00:03:25,000 --> 00:03:30,000
+The API response becomes a pandas DataFrame.
+
+43
+00:03:30,000 --> 00:03:35,000
+An empty-result check prevents silent missing-season errors.
+
+44
+00:03:35,000 --> 00:03:40,000
+Next, we convert GAME_DATE into a real datetime column.
+
+45
+00:03:40,000 --> 00:03:45,000
+We sort by date before selecting the first row.
+
+46
+00:03:45,000 --> 00:03:50,000
+That first row represents LeBron's first appearance that season.
+
+47
+00:03:50,000 --> 00:03:55,000
+We retain the season, date, matchup, and field goals made.
+
+48
+00:03:55,000 --> 00:04:00,000
+Converting FGM to integer makes its discrete type explicit.
+
+49
+00:04:00,000 --> 00:04:05,000
+Then we append the four values to our rows list.
+
+50
+00:04:05,000 --> 00:04:10,000
+A short pause avoids sending requests too aggressively.
+
+51
+00:04:10,000 --> 00:04:15,000
+After the loop, the rows become a new DataFrame.
+
+52
+00:04:15,000 --> 00:04:20,000
+We sort it chronologically and reset the row index.
+
+53
+00:04:20,000 --> 00:04:25,000
+The result is cached as a CSV for reproducibility.
+
+54
+00:04:25,000 --> 00:04:30,000
+The loader uses that cache when it already exists.
+
+55
+00:04:30,000 --> 00:04:35,000
+That makes repeated notebook runs faster and more stable.
+
+56
+00:04:35,000 --> 00:04:40,000
+We also validate that the table contains exactly 21 rows.
+
+57
+00:04:40,000 --> 00:04:45,000
+Now inspect the table before calculating any probabilities.
+
+58
+00:04:45,000 --> 00:04:50,000
+Each row is one season, and FGM is our observation.
+
+59
+00:04:50,000 --> 00:04:55,000
+We are ready to estimate the empirical distribution.
+
+60
+00:04:55,000 --> 00:05:00,000
+The distribution function receives the FGM series.
+
+61
+00:05:00,000 --> 00:05:05,000
+First, we create support from the minimum to maximum count.
+
+62
+00:05:05,000 --> 00:05:10,000
+This includes every integer, even if one was never observed.
+
+63
+00:05:10,000 --> 00:05:15,000
+Value counts tells us how often each FGM occurred.
+
+64
+00:05:15,000 --> 00:05:20,000
+With normalize set to true, frequencies become probabilities.
+
+65
+00:05:20,000 --> 00:05:25,000
+We sort the values and reindex them onto the full support.
+
+66
+00:05:25,000 --> 00:05:30,000
+Unobserved counts receive probability zero, not missing values.
+
+67
+00:05:30,000 --> 00:05:35,000
+The PMF is complete, so the CDF is its cumulative sum.
+
+68
+00:05:35,000 --> 00:05:40,000
+Each CDF value includes that count and everything below it.
+
+69
+00:05:40,000 --> 00:05:45,000
+Next, we calculate three summaries for interpretation.
+
+70
+00:05:45,000 --> 00:05:50,000
+The mean gives the historical average season-debut FGM.
+
+71
+00:05:50,000 --> 00:05:55,000
+The PMF mode gives the most frequently observed count.
+
+72
+00:05:55,000 --> 00:06:00,000
+The CDF estimates the probability of eight or fewer makes.
+
+73
+00:06:00,000 --> 00:06:05,000
+These are empirical summaries, not a deterministic prediction.
+
+74
+00:06:05,000 --> 00:06:10,000
+Finally, Matplotlib creates two side-by-side charts.
+
+75
+00:06:10,000 --> 00:06:15,000
+The left chart uses bars to display the PMF.
+
+76
+00:06:15,000 --> 00:06:20,000
+The right chart uses steps to display the CDF.
+
+77
+00:06:20,000 --> 00:06:25,000
+Read the left chart as probability of exactly each count.
+
+78
+00:06:25,000 --> 00:06:30,000
+Read the right chart as probability up to each count.
+
+79
+00:06:30,000 --> 00:06:35,000
+Here is the main takeaway from this short analysis.
+
+80
+00:06:35,000 --> 00:06:40,000
+A PDF describes density for a continuous random variable.
+
+81
+00:06:40,000 --> 00:06:45,000
+A PMF describes point probabilities for a discrete count.
+
+82
+00:06:45,000 --> 00:06:50,000
+A CDF describes the probability of being at or below a value.
+
+83
+00:06:50,000 --> 00:06:55,000
+Our baseline still ignores age, minutes, opponent, and injuries.
+
+84
+00:06:55,000 --> 00:07:00,000
+In the next iteration, we can add those predictive features.
