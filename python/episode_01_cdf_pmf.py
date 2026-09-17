@@ -149,19 +149,20 @@ def main() -> None:
     opening_games = load_or_fetch_data()
     pmf, cdf = empirical_distribution(opening_games["fgm"])
 
-    baseline_k = 9
     mean_fgm = opening_games["fgm"].mean()
+    median_k = int(opening_games["fgm"].median())
     mode_fgm = int(pmf.idxmax())
-    probability_at_most_baseline = cdf.loc[baseline_k]
+    probability_at_most_median = cdf.loc[median_k]
     probability_exactly_mode = pmf.loc[mode_fgm]
     probability_at_most_mode = cdf.loc[mode_fgm]
 
     print(opening_games.to_string(index=False))
     print(f"\nEmpirical mean FGM: {mean_fgm:.2f}")
+    print(f"Empirical median FGM: {median_k}")
     print(f"Empirical mode FGM: {mode_fgm}")
     print(
-        f"P(FGM <= {baseline_k}) from the empirical CDF: "
-        f"{probability_at_most_baseline:.1%}"
+        f"P(FGM <= {median_k}) from the empirical CDF: "
+        f"{probability_at_most_median:.1%}"
     )
     print(f"P(FGM = {mode_fgm}) from the empirical PMF: {probability_exactly_mode:.1%}")
     print(f"P(FGM <= {mode_fgm}) from the empirical CDF: {probability_at_most_mode:.1%}")

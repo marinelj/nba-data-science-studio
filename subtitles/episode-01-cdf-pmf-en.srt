@@ -296,7 +296,7 @@ Finally, Matplotlib creates two charts and highlights k equals 9 and 12.
 
 75
 00:06:10,000 --> 00:06:15,000
-Nine is the median baseline, while twelve is the PMF mode.
+Nine is the median, while twelve is the PMF mode.
 
 76
 00:06:15,000 --> 00:06:20,000

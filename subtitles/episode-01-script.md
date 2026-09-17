@@ -32,7 +32,7 @@ We are ready to estimate the empirical distribution. The distribution function r
 
 The PMF is complete, so the CDF is its cumulative sum. Each CDF value includes that count and everything below it. Next, we calculate three summaries for interpretation. The mean gives the historical average season-debut FGM. The PMF mode gives the most frequently observed count. The CDF shows a 52.2 percent chance of nine or fewer makes. These are empirical summaries, not a deterministic prediction.
 
-Finally, Matplotlib creates two charts and highlights k equals 9 and 12. Nine is the median baseline, while twelve is the PMF mode. At k equals 9, the CDF is 52.2 percent. At k equals 12, the CDF is 95.7 percent. The PMF at twelve is 21.7 percent, the largest exact probability.
+Finally, Matplotlib creates two charts and highlights k equals 9 and 12. Nine is the median, while twelve is the PMF mode. At k equals 9, the CDF is 52.2 percent. At k equals 12, the CDF is 95.7 percent. The PMF at twelve is 21.7 percent, the largest exact probability.
 
 ## 06:30-07:00 — Closing
 
