@@ -2,7 +2,7 @@
 
 ## 00:00-00:30 — Opening
 
-Today, we will use NBA data to learn two probability concepts. Our question is about LeBron James and his next season debut. How many field goals might he make in the 2026-27 opener? We will use his first 21 NBA season-debut performances as evidence. The goal is not to guarantee one exact prediction. It is to understand the PMF, PDF, and CDF clearly.
+Today, we will use NBA data to learn two probability concepts. Our question is about LeBron James and his next season debut. How many field goals might he make in the 2026-27 opener? We will use all 23 completed NBA season-debut performances as evidence. The goal is not to guarantee one exact prediction. It is to understand the PMF, PDF, and CDF clearly.
 
 ## 00:30-02:00 — Concepts
 
@@ -16,17 +16,17 @@ The CDF answers a different but related question. It gives the probability that 
 
 ## 02:00-02:30 — NBA Example
 
-Now let us turn this idea into an NBA example. We use LeBron's first 21 seasons, from 2003-04 through 2023-24. The target is LeBron's season debut in 2026-27. For each season, we select his first regular-season appearance. That may differ from his team's scheduled opening night. This choice avoids treating a missed opener as zero field goals.
+Now let us turn this idea into an NBA example. We use all completed seasons, from 2003-04 through 2025-26. The target is LeBron's season debut in 2026-27. For each season, we select his first regular-season appearance. That may differ from his team's scheduled opening night. This choice avoids treating a missed opener as zero field goals.
 
 ## 02:30-06:30 — Python Walkthrough
 
-Let us open the Jupyter notebook and start with the imports. We import pandas, Matplotlib, Path, sleep, and nba_api. LeBron's NBA player identifier is stored as a constant. We also define the first year and number of seasons. The season-label function converts 2005 into 2005-06. A list comprehension generates all 21 season labels.
+Let us open the Jupyter notebook and start with the imports. We import pandas, Matplotlib, Path, sleep, and nba_api. LeBron's NBA player identifier is stored as a constant. We also define the first year and number of seasons. The season-label function converts 2003 into 2003-04. A list comprehension generates all 23 season labels.
 
 Next, we define a function that fetches each season debut. The rows list will collect one dictionary per season. We loop through the season labels in chronological order. PlayerGameLog requests LeBron's game log for one season. We explicitly restrict the request to regular-season games. The API response becomes a pandas DataFrame. An empty-result check prevents silent missing-season errors.
 
 Next, we convert GAME_DATE into a real datetime column. We sort by date before selecting the first row. That first row represents LeBron's first appearance that season. We retain the season, date, matchup, and field goals made. Converting FGM to integer makes its discrete type explicit. Then we append the four values to our rows list. A short pause avoids sending requests too aggressively.
 
-After the loop, the rows become a new DataFrame. We sort it chronologically and reset the row index. The result is cached as a CSV for reproducibility. The loader uses that cache when it already exists. That makes repeated notebook runs faster and more stable. We also validate that the table contains exactly 21 rows. Now inspect the table before calculating any probabilities. Each row is one season, and FGM is our observation.
+After the loop, the rows become a new DataFrame. We sort it chronologically and reset the row index. The result is cached as a CSV for reproducibility. The loader uses that cache when it already exists. That makes repeated notebook runs faster and more stable. We also validate that the table contains exactly 23 rows. Now inspect the table before calculating any probabilities. Each row is one season, and FGM is our observation.
 
 We are ready to estimate the empirical distribution. The distribution function receives the FGM series. First, we create support from the minimum to maximum count. This includes every integer, even if one was never observed. Value counts tells us how often each FGM occurred. With normalize set to true, frequencies become probabilities. We sort the values and reindex them onto the full support. Unobserved counts receive probability zero, not missing values.
 
