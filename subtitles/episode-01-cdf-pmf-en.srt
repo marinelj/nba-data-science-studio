@@ -12,7 +12,7 @@ How many field goals might he make in the 2026-27 opener?
 
 4
 00:00:15,000 --> 00:00:20,000
-We will use his previous 21 season-debut performances as evidence.
+We will use his first 21 NBA season-debut performances as evidence.
 
 5
 00:00:20,000 --> 00:00:25,000
@@ -100,7 +100,7 @@ Now let us turn this idea into an NBA example.
 
 26
 00:02:05,000 --> 00:02:10,000
-We use 21 completed seasons, from 2005-06 through 2025-26.
+We use LeBron's first 21 seasons, from 2003-04 through 2023-24.
 
 27
 00:02:10,000 --> 00:02:15,000

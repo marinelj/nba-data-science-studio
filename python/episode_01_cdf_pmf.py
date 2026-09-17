@@ -9,12 +9,12 @@ from nba_api.stats.endpoints import playergamelog
 
 
 PLAYER_ID = 2544
-START_YEAR = 2005
+START_YEAR = 2003
 NUMBER_OF_SEASONS = 21
 TARGET_SEASON = "2026-27"
 
 REPO_ROOT = Path(__file__).resolve().parents[1]
-DATA_PATH = REPO_ROOT / "data" / "lebron_season_debut_fgm_2005_2025.csv"
+DATA_PATH = REPO_ROOT / "data" / "lebron_season_debut_fgm_2003_2023.csv"
 FIGURE_PATH = REPO_ROOT / "videos" / "episode-01-pmf-cdf.png"
 
 

@@ -4,7 +4,7 @@ Short, reproducible lessons that use NBA questions to explain statistics, data s
 
 ## Episode 01: CDF and PMF with LeBron's season-debut FGM
 
-The first seven-minute episode estimates the empirical distribution of LeBron James's field goals made in his 2026-27 season debut, using his first regular-season appearance from each of the previous 21 completed seasons.
+The first seven-minute episode estimates the empirical distribution of LeBron James's field goals made in his 2026-27 season debut, using his first regular-season appearance from each of his first 21 NBA seasons: 2003-04 through 2023-24.
 
 Because field goals made is a discrete count, the episode uses a probability mass function (PMF), the discrete counterpart of a probability density function (PDF), together with a cumulative distribution function (CDF).
 
@@ -36,9 +36,9 @@ To present from Jupyter, open `python/episode_01_cdf_pmf.ipynb` and run the cell
 - [Recording script](subtitles/episode-01-script.md)
 - [Python script](python/episode_01_cdf_pmf.py)
 - [Jupyter notebook](python/episode_01_cdf_pmf.ipynb)
-- [Verified 21-season dataset](data/lebron_season_debut_fgm_2005_2025.csv)
+- [Verified 21-season dataset](data/lebron_season_debut_fgm_2003_2023.csv)
 - [Generated PMF/CDF chart](videos/episode-01-pmf-cdf.png)
 
 ## Statistical scope
 
-The sample is LeBron's first regular-season appearance in each season, not necessarily his team's scheduled opening night. This avoids silently treating a missed opener as zero field goals made. The empirical distribution is a transparent baseline, not a full forecasting model; it does not adjust for age, minutes, opponent, injury status, or role.
+The sample is LeBron's first regular-season appearance in each of his first 21 NBA seasons, not necessarily his team's scheduled opening night. This avoids silently treating a missed opener as zero field goals made. The empirical distribution is a transparent baseline, not a full forecasting model; it does not adjust for age, minutes, opponent, injury status, or role.

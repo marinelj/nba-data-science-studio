@@ -3,7 +3,7 @@
 Episode 01 includes the cached dataset:
 
 ```text
-lebron_season_debut_fgm_2005_2025.csv
+lebron_season_debut_fgm_2003_2023.csv
 ```
 
 The file contains one row per season: season label, game date, matchup, and field goals made. It was generated from the NBA player game-log endpoint and verified by running the complete script on 2026-09-17.

@@ -25,9 +25,9 @@ Use LeBron James's season-debut field goals made to explain the relationship bet
 
 ## Daily example
 
-The episode asks: based on LeBron's first regular-season appearance in the previous 21 completed seasons, what does the empirical distribution suggest about his FGM in his 2026-27 season debut?
+The episode asks: based on LeBron's first regular-season appearance in his first 21 NBA seasons, what does the empirical distribution suggest about his FGM in his 2026-27 season debut?
 
-The code uses seasons 2005-06 through 2025-26. It deliberately selects LeBron's first game played in each season. A strict team-opening-night study would require the team schedule and explicit treatment of DNP records.
+The code uses seasons 2003-04 through 2023-24. It deliberately selects LeBron's first game played in each season. A strict team-opening-night study would require the team schedule and explicit treatment of DNP records.
 
 ## Python walkthrough
 

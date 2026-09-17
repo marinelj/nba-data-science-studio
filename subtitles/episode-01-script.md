@@ -2,7 +2,7 @@
 
 ## 00:00-00:30 — Opening
 
-Today, we will use NBA data to learn two probability concepts. Our question is about LeBron James and his next season debut. How many field goals might he make in the 2026-27 opener? We will use his previous 21 season-debut performances as evidence. The goal is not to guarantee one exact prediction. It is to understand the PMF, PDF, and CDF clearly.
+Today, we will use NBA data to learn two probability concepts. Our question is about LeBron James and his next season debut. How many field goals might he make in the 2026-27 opener? We will use his first 21 NBA season-debut performances as evidence. The goal is not to guarantee one exact prediction. It is to understand the PMF, PDF, and CDF clearly.
 
 ## 00:30-02:00 — Concepts
 
@@ -16,7 +16,7 @@ The CDF answers a different but related question. It gives the probability that 
 
 ## 02:00-02:30 — NBA Example
 
-Now let us turn this idea into an NBA example. We use 21 completed seasons, from 2005-06 through 2025-26. The target is LeBron's season debut in 2026-27. For each season, we select his first regular-season appearance. That may differ from his team's scheduled opening night. This choice avoids treating a missed opener as zero field goals.
+Now let us turn this idea into an NBA example. We use LeBron's first 21 seasons, from 2003-04 through 2023-24. The target is LeBron's season debut in 2026-27. For each season, we select his first regular-season appearance. That may differ from his team's scheduled opening night. This choice avoids treating a missed opener as zero field goals.
 
 ## 02:30-06:30 — Python Walkthrough
 
