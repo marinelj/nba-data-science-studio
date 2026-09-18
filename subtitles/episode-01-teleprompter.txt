@@ -1,0 +1,27 @@
+Today, we will use NBA data to learn two probability concepts. Our question is about LeBron James and his next season debut. How many field goals might he make in the 2026-27 opener? We will use all 23 completed NBA season-debut performances as evidence. The goal is not to guarantee one exact prediction. It is to understand the PMF, PDF, and CDF clearly.
+
+First, define a random variable called X. X is LeBron's field goals made in a season debut. Each historical season gives us one observed value of X. A probability distribution describes how likely different values are.
+
+For a continuous variable, we often describe a PDF. PDF means probability density function, not point probability. Probability comes from the area under a PDF over an interval.
+
+But field goals made can only be whole-number counts. Therefore, X is discrete rather than continuous. The correct discrete counterpart of a PDF is a PMF. A PMF assigns a probability to every possible count. All PMF probabilities must add up to one.
+
+The CDF answers a different but related question. It gives the probability that X is at most k. Formally, F of k equals P of X less than or equal to k. We compute it by cumulatively adding PMF probabilities. So a CDF never decreases and eventually reaches one. The PMF means exactly; the CDF means at most.
+
+Now let us turn this idea into an NBA example. We use all completed seasons, from 2003-04 through 2025-26. The target is LeBron's season debut in 2026-27. For each season, we select his first regular-season appearance. That may differ from his team's scheduled opening night. This choice avoids treating a missed opener as zero field goals.
+
+Let us open the Jupyter notebook and start with the imports. We import pandas, Matplotlib, Path, sleep, and nba_api. LeBron's NBA player identifier is stored as a constant. We also define the first year and number of seasons. The season-label function converts 2003 into 2003-04. A list comprehension generates all 23 season labels.
+
+Next, we define a function that fetches each season debut. The rows list will collect one dictionary per season. We loop through the season labels in chronological order. PlayerGameLog requests LeBron's game log for one season. We explicitly restrict the request to regular-season games. The API response becomes a pandas DataFrame. An empty-result check prevents silent missing-season errors.
+
+Next, we convert GAME_DATE into a real datetime column. We sort by date before selecting the first row. That first row represents LeBron's first appearance that season. We retain the season, date, matchup, and field goals made. Converting FGM to integer makes its discrete type explicit. Then we append the four values to our rows list. A short pause avoids sending requests too aggressively.
+
+After the loop, the rows become a new DataFrame. We sort it chronologically and reset the row index. The result is cached as a CSV for reproducibility. The loader uses that cache when it already exists. That makes repeated notebook runs faster and more stable. We also validate that the table contains exactly 23 rows. Now inspect the table before calculating any probabilities. Each row is one season, and FGM is our observation.
+
+We are ready to estimate the empirical distribution. The distribution function receives the FGM series. First, we create support from the minimum to maximum count. This includes every integer, even if one was never observed. Value counts tells us how often each FGM occurred. With normalize set to true, frequencies become probabilities. We sort the values and reindex them onto the full support. Unobserved counts receive probability zero, not missing values.
+
+The PMF is complete, so the CDF is its cumulative sum. Each CDF value includes that count and everything below it. Next, we calculate three summaries for interpretation. The mean gives the historical average season-debut FGM. The PMF mode gives the most frequently observed count. The CDF shows a 52.2 percent chance of nine or fewer makes. These are empirical summaries, not a deterministic prediction.
+
+Finally, Matplotlib creates two charts and highlights k equals 9 and 12. Nine is the median, while twelve is the PMF mode. At k equals 9, the CDF is 52.2 percent. At k equals 12, the CDF is 95.7 percent. The PMF at twelve is 21.7 percent, the largest exact probability.
+
+Here is the main takeaway from this short analysis. A PDF describes density for a continuous random variable. A PMF describes point probabilities for a discrete count. A CDF describes the probability of being at or below a value. Our baseline still ignores age, minutes, opponent, and injuries. In the next iteration, we can add those predictive features.
