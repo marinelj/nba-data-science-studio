@@ -1,0 +1,134 @@
+{
+  "sample_seasons": 23,
+  "full_82_game_seasons": 20,
+  "target": "first_high_team_game_number",
+  "age_definition": "days since 1984-12-30 at debut / 365.2425",
+  "short_seasons": [
+    {
+      "season": "2011-12",
+      "team_games": 66
+    },
+    {
+      "season": "2019-20",
+      "team_games": 71
+    },
+    {
+      "season": "2020-21",
+      "team_games": 72
+    }
+  ],
+  "distribution": {
+    "median": 49.0,
+    "mean": 41.608695652173914,
+    "modes": [
+      49
+    ],
+    "cdf_at_20": 0.21739130434782608,
+    "cdf_at_41": 0.4347826086956521,
+    "cdf_at_60": 0.8260869565217388
+  },
+  "correlations": [
+    {
+      "x": "age_at_debut",
+      "y": "debut_fgm",
+      "n": 23,
+      "pearson_r": -0.08549769808437094,
+      "spearman_rho": -0.09531412805633867
+    },
+    {
+      "x": "age_at_debut",
+      "y": "season_high_points",
+      "n": 23,
+      "pearson_r": -0.25781743835961696,
+      "spearman_rho": -0.26779257874145646
+    }
+  ],
+  "model": {
+    "target": "first_high_team_game_number",
+    "n": 23,
+    "features": [
+      "age_at_debut",
+      "debut_points"
+    ],
+    "intercept": 75.72797257063505,
+    "age_coefficient": -1.017630289734481,
+    "debut_points_coefficient": -0.15421467325456995,
+    "training_r2": 0.1207903792333046,
+    "training_mae": 15.613659483782708
+  },
+  "walk_forward": {
+    "n_test_seasons": 13,
+    "prediction": {
+      "mae_games": 18.43034865525386,
+      "rmse_games": 23.05679858930157
+    },
+    "past_mean": {
+      "mae_games": 18.80833950720233,
+      "rmse_games": 22.093980650641647
+    },
+    "past_median": {
+      "mae_games": 20.576923076923077,
+      "rmse_games": 25.498491659764444
+    }
+  },
+  "sensitivity_82_game_seasons": {
+    "model": {
+      "target": "first_high_team_game_number",
+      "n": 20,
+      "features": [
+        "age_at_debut",
+        "debut_points"
+      ],
+      "intercept": 75.0938374020533,
+      "age_coefficient": -0.9838883535631411,
+      "debut_points_coefficient": -0.19016199966761002,
+      "training_r2": 0.11877655648202134,
+      "training_mae": 15.794020645465114
+    },
+    "walk_forward": {
+      "n_test_seasons": 10,
+      "prediction": {
+        "mae_games": 19.20979291751002,
+        "rmse_games": 25.403205908639503
+      },
+      "past_mean": {
+        "mae_games": 19.725462180148714,
+        "rmse_games": 23.24702585173542
+      },
+      "past_median": {
+        "mae_games": 22.55,
+        "rmse_games": 27.076281133124617
+      }
+    }
+  },
+  "sensitivity_normalized_82": {
+    "model": {
+      "target": "first_high_82_equivalent",
+      "n": 23,
+      "features": [
+        "age_at_debut",
+        "debut_points"
+      ],
+      "intercept": 73.13462149533268,
+      "age_coefficient": -0.9691017203729997,
+      "debut_points_coefficient": -0.06504721848863369,
+      "training_r2": 0.10491703931847174,
+      "training_mae": 16.271812207656456
+    },
+    "walk_forward": {
+      "n_test_seasons": 13,
+      "prediction": {
+        "mae_games": 19.04822518260142,
+        "rmse_games": 23.897943803691426
+      },
+      "past_mean": {
+        "mae_games": 19.318785517715927,
+        "rmse_games": 22.84448847607835
+      },
+      "past_median": {
+        "mae_games": 21.40373007230769,
+        "rmse_games": 26.345711819284382
+      }
+    }
+  }
+}

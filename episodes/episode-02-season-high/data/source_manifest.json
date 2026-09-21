@@ -1,0 +1,320 @@
+{
+  "player_id": 2544,
+  "birthdate": "1984-12-30",
+  "seasons": [
+    "2003-04",
+    "2004-05",
+    "2005-06",
+    "2006-07",
+    "2007-08",
+    "2008-09",
+    "2009-10",
+    "2010-11",
+    "2011-12",
+    "2012-13",
+    "2013-14",
+    "2014-15",
+    "2015-16",
+    "2016-17",
+    "2017-18",
+    "2018-19",
+    "2019-20",
+    "2020-21",
+    "2021-22",
+    "2022-23",
+    "2023-24",
+    "2024-25",
+    "2025-26"
+  ],
+  "generated_at_utc": "2026-09-21T05:18:40.999601+00:00",
+  "raw_files": [
+    {
+      "file": "raw/career_totals.json",
+      "sha256": "8c4ec30fd3b0a5d66b2f4b2816850eb6a9a2e9c746201e4465973ee7cc6ca3e3",
+      "source_url": "https://stats.nba.com/stats/playercareerstats?LeagueID=00&PerMode=Totals&PlayerID=2544",
+      "retrieved_at_utc": "2026-09-20T18:01:09.866076+00:00"
+    },
+    {
+      "file": "raw/player_2003-04.json",
+      "sha256": "9258a406cf21fa591e3686e8be40e645439ae57a6aab6f897f349b691b762423",
+      "source_url": "https://stats.nba.com/stats/playergamelog?DateFrom=&DateTo=&LeagueID=00&PlayerID=2544&Season=2003-04&SeasonType=Regular+Season",
+      "retrieved_at_utc": "2026-09-20T18:01:11.296773+00:00"
+    },
+    {
+      "file": "raw/player_2004-05.json",
+      "sha256": "905b08a0aa54fb27f252cd13a15228d5a65a4eadf68f8d61cb0b535414528e80",
+      "source_url": "https://stats.nba.com/stats/playergamelog?DateFrom=&DateTo=&LeagueID=00&PlayerID=2544&Season=2004-05&SeasonType=Regular+Season",
+      "retrieved_at_utc": "2026-09-20T18:01:15.586496+00:00"
+    },
+    {
+      "file": "raw/player_2005-06.json",
+      "sha256": "37da67658c927f84e593bdea10ace8c778150340c5bb5288e2e8bb2b512df180",
+      "source_url": "https://stats.nba.com/stats/playergamelog?DateFrom=&DateTo=&LeagueID=00&PlayerID=2544&Season=2005-06&SeasonType=Regular+Season",
+      "retrieved_at_utc": "2026-09-20T18:01:18.552629+00:00"
+    },
+    {
+      "file": "raw/player_2006-07.json",
+      "sha256": "a3c75a69db298bae597cf053c42748d63203f9af79453bdbc847b3e436ea096f",
+      "source_url": "https://stats.nba.com/stats/playergamelog?DateFrom=&DateTo=&LeagueID=00&PlayerID=2544&Season=2006-07&SeasonType=Regular+Season",
+      "retrieved_at_utc": "2026-09-20T18:01:21.421276+00:00"
+    },
+    {
+      "file": "raw/player_2007-08.json",
+      "sha256": "7283291a0e7358a722a592c456f22038a48149f98e3ae03f3dbddf156968d903",
+      "source_url": "https://stats.nba.com/stats/playergamelog?DateFrom=&DateTo=&LeagueID=00&PlayerID=2544&Season=2007-08&SeasonType=Regular+Season",
+      "retrieved_at_utc": "2026-09-20T18:01:24.089105+00:00"
+    },
+    {
+      "file": "raw/player_2008-09.json",
+      "sha256": "8e5aac356a860cf0f2e5ac9e9f1efadfe30c9bf98a955d8c81f18f3277fdb68c",
+      "source_url": "https://stats.nba.com/stats/playergamelog?DateFrom=&DateTo=&LeagueID=00&PlayerID=2544&Season=2008-09&SeasonType=Regular+Season",
+      "retrieved_at_utc": "2026-09-20T18:01:26.951155+00:00"
+    },
+    {
+      "file": "raw/player_2009-10.json",
+      "sha256": "82e4e6373a2e69aa4c1af01e584d95fd6e7ba203c0aa96a4f318264491bebd15",
+      "source_url": "https://stats.nba.com/stats/playergamelog?DateFrom=&DateTo=&LeagueID=00&PlayerID=2544&Season=2009-10&SeasonType=Regular+Season",
+      "retrieved_at_utc": "2026-09-20T18:01:29.820028+00:00"
+    },
+    {
+      "file": "raw/player_2010-11.json",
+      "sha256": "8dc5a1d281fecf565e067cd4be10c85b9d37680311a587da5f0ffcb4e43bed8c",
+      "source_url": "https://stats.nba.com/stats/playergamelog?DateFrom=&DateTo=&LeagueID=00&PlayerID=2544&Season=2010-11&SeasonType=Regular+Season",
+      "retrieved_at_utc": "2026-09-20T18:01:32.582691+00:00"
+    },
+    {
+      "file": "raw/player_2011-12.json",
+      "sha256": "8908c44e42dfcc2ac31c92811c254729eeb5bffdcefa3d235d82a043f57d5641",
+      "source_url": "https://stats.nba.com/stats/playergamelog?DateFrom=&DateTo=&LeagueID=00&PlayerID=2544&Season=2011-12&SeasonType=Regular+Season",
+      "retrieved_at_utc": "2026-09-20T18:01:36.713762+00:00"
+    },
+    {
+      "file": "raw/player_2012-13.json",
+      "sha256": "931b97219977856fe4afb1cc08f8e533a5d56f81d5fbd36a6cf6baf20d7aafd1",
+      "source_url": "https://stats.nba.com/stats/playergamelog?DateFrom=&DateTo=&LeagueID=00&PlayerID=2544&Season=2012-13&SeasonType=Regular+Season",
+      "retrieved_at_utc": "2026-09-20T18:01:39.677824+00:00"
+    },
+    {
+      "file": "raw/player_2013-14.json",
+      "sha256": "07d27a04ad9fa48297f981d7c9040d58dcb92bf92723d2607c241c0af846816b",
+      "source_url": "https://stats.nba.com/stats/playergamelog?DateFrom=&DateTo=&LeagueID=00&PlayerID=2544&Season=2013-14&SeasonType=Regular+Season",
+      "retrieved_at_utc": "2026-09-20T18:01:42.434847+00:00"
+    },
+    {
+      "file": "raw/player_2014-15.json",
+      "sha256": "21fc13b052f885c78dfc36d0c04f19f06db88759806a296fc6ca754c9e57a78a",
+      "source_url": "https://stats.nba.com/stats/playergamelog?DateFrom=&DateTo=&LeagueID=00&PlayerID=2544&Season=2014-15&SeasonType=Regular+Season",
+      "retrieved_at_utc": "2026-09-20T18:01:45.100111+00:00"
+    },
+    {
+      "file": "raw/player_2015-16.json",
+      "sha256": "172d990401fe4cb1d2bf76930b742e2a17238466f920876016ec23ab3547186f",
+      "source_url": "https://stats.nba.com/stats/playergamelog?DateFrom=&DateTo=&LeagueID=00&PlayerID=2544&Season=2015-16&SeasonType=Regular+Season",
+      "retrieved_at_utc": "2026-09-20T18:01:47.796467+00:00"
+    },
+    {
+      "file": "raw/player_2016-17.json",
+      "sha256": "40b120a93f74ea1e70dbbd66a2ebc05ead8b912522b88a2290f68c1238edbcf2",
+      "source_url": "https://stats.nba.com/stats/playergamelog?DateFrom=&DateTo=&LeagueID=00&PlayerID=2544&Season=2016-17&SeasonType=Regular+Season",
+      "retrieved_at_utc": "2026-09-20T18:01:50.431401+00:00"
+    },
+    {
+      "file": "raw/player_2017-18.json",
+      "sha256": "a0d9d3e221fe9a10d21ab229f0f4bcf197a6bcc1e8ac0495b09d193d3f968f8f",
+      "source_url": "https://stats.nba.com/stats/playergamelog?DateFrom=&DateTo=&LeagueID=00&PlayerID=2544&Season=2017-18&SeasonType=Regular+Season",
+      "retrieved_at_utc": "2026-09-20T18:01:53.122214+00:00"
+    },
+    {
+      "file": "raw/player_2018-19.json",
+      "sha256": "ab41e0753cdf273aac7142890f7575181eacdef2db9a2967eb4148ba4942939e",
+      "source_url": "https://stats.nba.com/stats/playergamelog?DateFrom=&DateTo=&LeagueID=00&PlayerID=2544&Season=2018-19&SeasonType=Regular+Season",
+      "retrieved_at_utc": "2026-09-20T18:01:56.042170+00:00"
+    },
+    {
+      "file": "raw/player_2019-20.json",
+      "sha256": "0a9109a46a88de8b851af3b38a8cd3381383cbe58dcb10e52bdd701ede763bcc",
+      "source_url": "https://stats.nba.com/stats/playergamelog?DateFrom=&DateTo=&LeagueID=00&PlayerID=2544&Season=2019-20&SeasonType=Regular+Season",
+      "retrieved_at_utc": "2026-09-20T18:01:58.788210+00:00"
+    },
+    {
+      "file": "raw/player_2020-21.json",
+      "sha256": "9a531bc33867210dc4e7b18a3af53089ac110e9321cbb2da99e5fe6303686a37",
+      "source_url": "https://stats.nba.com/stats/playergamelog?DateFrom=&DateTo=&LeagueID=00&PlayerID=2544&Season=2020-21&SeasonType=Regular+Season",
+      "retrieved_at_utc": "2026-09-20T18:02:01.149893+00:00"
+    },
+    {
+      "file": "raw/player_2021-22.json",
+      "sha256": "992aa26f5d2845cbbf3566846ca06806d5945871be7601307e52e1bd67477d0e",
+      "source_url": "https://stats.nba.com/stats/playergamelog?DateFrom=&DateTo=&LeagueID=00&PlayerID=2544&Season=2021-22&SeasonType=Regular+Season",
+      "retrieved_at_utc": "2026-09-20T18:02:03.763820+00:00"
+    },
+    {
+      "file": "raw/player_2022-23.json",
+      "sha256": "3d36c3e89a82ddc6581464ade877527f1c4df08f0672132e1bce8003db9c1e99",
+      "source_url": "https://stats.nba.com/stats/playergamelog?DateFrom=&DateTo=&LeagueID=00&PlayerID=2544&Season=2022-23&SeasonType=Regular+Season",
+      "retrieved_at_utc": "2026-09-20T18:02:06.489793+00:00"
+    },
+    {
+      "file": "raw/player_2023-24.json",
+      "sha256": "fd971fe70d305b38e130ed81bdbe90b3dd9d6df56de335a3b4a65420493eec92",
+      "source_url": "https://stats.nba.com/stats/playergamelog?DateFrom=&DateTo=&LeagueID=00&PlayerID=2544&Season=2023-24&SeasonType=Regular+Season",
+      "retrieved_at_utc": "2026-09-20T18:02:09.252182+00:00"
+    },
+    {
+      "file": "raw/player_2024-25.json",
+      "sha256": "aa7e2cd84ae519126dd2b85f3078faacd62fd515c1472487ae7c435d6bd01a77",
+      "source_url": "https://stats.nba.com/stats/playergamelog?DateFrom=&DateTo=&LeagueID=00&PlayerID=2544&Season=2024-25&SeasonType=Regular+Season",
+      "retrieved_at_utc": "2026-09-20T18:02:11.424559+00:00"
+    },
+    {
+      "file": "raw/player_2025-26.json",
+      "sha256": "809063b5e68ab6c1b54be4903c7c243e5023a75658ba3f23e91301e9b8aa9813",
+      "source_url": "https://stats.nba.com/stats/playergamelog?DateFrom=&DateTo=&LeagueID=00&PlayerID=2544&Season=2025-26&SeasonType=Regular+Season",
+      "retrieved_at_utc": "2026-09-20T18:02:13.590299+00:00"
+    },
+    {
+      "file": "raw/player_info.json",
+      "sha256": "931ed065b302e89ee7163d6c052efaef8e565e5118c6757fd0318b814b776699",
+      "source_url": "https://stats.nba.com/stats/commonplayerinfo?LeagueID=00&PlayerID=2544",
+      "retrieved_at_utc": "2026-09-20T18:01:08.705565+00:00"
+    },
+    {
+      "file": "raw/team_2003-04.json",
+      "sha256": "32091660f6badf540298e8978f50e2fa5f01558edb0db29bd6b817fdbed27a9d",
+      "source_url": "https://stats.nba.com/stats/teamgamelog?DateFrom=&DateTo=&LeagueID=00&Season=2003-04&SeasonType=Regular+Season&TeamID=1610612739",
+      "retrieved_at_utc": "2026-09-20T18:01:14.423808+00:00"
+    },
+    {
+      "file": "raw/team_2004-05.json",
+      "sha256": "8f31252c70108241da6d1dfaa9b8b87d728379df856aa5830f7c34dcfbaf8bf4",
+      "source_url": "https://stats.nba.com/stats/teamgamelog?DateFrom=&DateTo=&LeagueID=00&Season=2004-05&SeasonType=Regular+Season&TeamID=1610612739",
+      "retrieved_at_utc": "2026-09-20T18:01:17.325829+00:00"
+    },
+    {
+      "file": "raw/team_2005-06.json",
+      "sha256": "60b086e9ac92a193fc310b75f86e97138d46d84bedc8486ec3bb00fdc17804f2",
+      "source_url": "https://stats.nba.com/stats/teamgamelog?DateFrom=&DateTo=&LeagueID=00&Season=2005-06&SeasonType=Regular+Season&TeamID=1610612739",
+      "retrieved_at_utc": "2026-09-20T18:01:20.195941+00:00"
+    },
+    {
+      "file": "raw/team_2006-07.json",
+      "sha256": "43e101570180a58d21507ef7a00a0f8b36fda4a59f2e23183892be739e18941b",
+      "source_url": "https://stats.nba.com/stats/teamgamelog?DateFrom=&DateTo=&LeagueID=00&Season=2006-07&SeasonType=Regular+Season&TeamID=1610612739",
+      "retrieved_at_utc": "2026-09-20T18:01:22.958952+00:00"
+    },
+    {
+      "file": "raw/team_2007-08.json",
+      "sha256": "f6b60d4dbe4bb60a0f401844ffb70f7520572b2587c56c3e1911f90ea35034bf",
+      "source_url": "https://stats.nba.com/stats/teamgamelog?DateFrom=&DateTo=&LeagueID=00&Season=2007-08&SeasonType=Regular+Season&TeamID=1610612739",
+      "retrieved_at_utc": "2026-09-20T18:01:25.625426+00:00"
+    },
+    {
+      "file": "raw/team_2008-09.json",
+      "sha256": "81dd7c6548acadf635658db1ac4261d9a5ad10ab2abeaebef05cd49c4cb95dbc",
+      "source_url": "https://stats.nba.com/stats/teamgamelog?DateFrom=&DateTo=&LeagueID=00&Season=2008-09&SeasonType=Regular+Season&TeamID=1610612739",
+      "retrieved_at_utc": "2026-09-20T18:01:28.594277+00:00"
+    },
+    {
+      "file": "raw/team_2009-10.json",
+      "sha256": "d9bda8d42e8f3b8eab0e8dec9c4589115148270683e073102a8d824d5364cc84",
+      "source_url": "https://stats.nba.com/stats/teamgamelog?DateFrom=&DateTo=&LeagueID=00&Season=2009-10&SeasonType=Regular+Season&TeamID=1610612739",
+      "retrieved_at_utc": "2026-09-20T18:01:31.354783+00:00"
+    },
+    {
+      "file": "raw/team_2010-11.json",
+      "sha256": "ea021203345d98de8846e9e3032e1bb612e597c3cc7195df5e7268c33220be62",
+      "source_url": "https://stats.nba.com/stats/teamgamelog?DateFrom=&DateTo=&LeagueID=00&Season=2010-11&SeasonType=Regular+Season&TeamID=1610612748",
+      "retrieved_at_utc": "2026-09-20T18:01:35.538688+00:00"
+    },
+    {
+      "file": "raw/team_2011-12.json",
+      "sha256": "72d1d19aeaa41281aed37fb964c52cf4a568dff024d847c313a74b57f2ee5875",
+      "source_url": "https://stats.nba.com/stats/teamgamelog?DateFrom=&DateTo=&LeagueID=00&Season=2011-12&SeasonType=Regular+Season&TeamID=1610612748",
+      "retrieved_at_utc": "2026-09-20T18:01:38.299261+00:00"
+    },
+    {
+      "file": "raw/team_2012-13.json",
+      "sha256": "4de15a9af1a080dbb5cefc2020ab7dee28526b568c853345e4cfc4f42659f7e3",
+      "source_url": "https://stats.nba.com/stats/teamgamelog?DateFrom=&DateTo=&LeagueID=00&Season=2012-13&SeasonType=Regular+Season&TeamID=1610612748",
+      "retrieved_at_utc": "2026-09-20T18:01:41.322270+00:00"
+    },
+    {
+      "file": "raw/team_2013-14.json",
+      "sha256": "5573e7a2db360dc87e41dc4f37ec9b105446aaffd378165e42dcf16beb70c5fc",
+      "source_url": "https://stats.nba.com/stats/teamgamelog?DateFrom=&DateTo=&LeagueID=00&Season=2013-14&SeasonType=Regular+Season&TeamID=1610612748",
+      "retrieved_at_utc": "2026-09-20T18:01:43.950887+00:00"
+    },
+    {
+      "file": "raw/team_2014-15.json",
+      "sha256": "a1d73efe941a6c299449f6b4e007f3a18c0220bd329189f764e0bcacc5311a46",
+      "source_url": "https://stats.nba.com/stats/teamgamelog?DateFrom=&DateTo=&LeagueID=00&Season=2014-15&SeasonType=Regular+Season&TeamID=1610612739",
+      "retrieved_at_utc": "2026-09-20T18:01:46.565988+00:00"
+    },
+    {
+      "file": "raw/team_2015-16.json",
+      "sha256": "a7df9b39f9d20f0b4762b49eaa47b5bb85c97616d82b9fae996f3da2c13e31dd",
+      "source_url": "https://stats.nba.com/stats/teamgamelog?DateFrom=&DateTo=&LeagueID=00&Season=2015-16&SeasonType=Regular+Season&TeamID=1610612739",
+      "retrieved_at_utc": "2026-09-20T18:01:49.281695+00:00"
+    },
+    {
+      "file": "raw/team_2016-17.json",
+      "sha256": "a9c473e230c8608b1db5013fe7dc76f68f46ef91e8ee1fc4847e8c8ab3374499",
+      "source_url": "https://stats.nba.com/stats/teamgamelog?DateFrom=&DateTo=&LeagueID=00&Season=2016-17&SeasonType=Regular+Season&TeamID=1610612739",
+      "retrieved_at_utc": "2026-09-20T18:01:51.895919+00:00"
+    },
+    {
+      "file": "raw/team_2017-18.json",
+      "sha256": "950d3a6d5ae8c5538dcd0f7b57e702fe92dcd5950ae1a562cb16c247f2725d2d",
+      "source_url": "https://stats.nba.com/stats/teamgamelog?DateFrom=&DateTo=&LeagueID=00&Season=2017-18&SeasonType=Regular+Season&TeamID=1610612739",
+      "retrieved_at_utc": "2026-09-20T18:01:54.692540+00:00"
+    },
+    {
+      "file": "raw/team_2018-19.json",
+      "sha256": "9d4399981c202a6f6f02fbd8353752e6b84215277a17467a11454983dd8d0c3e",
+      "source_url": "https://stats.nba.com/stats/teamgamelog?DateFrom=&DateTo=&LeagueID=00&Season=2018-19&SeasonType=Regular+Season&TeamID=1610612747",
+      "retrieved_at_utc": "2026-09-20T18:01:57.530015+00:00"
+    },
+    {
+      "file": "raw/team_2019-20.json",
+      "sha256": "1f64f6be395c112110c93203aa3438ba6800365416c73637cff6e17a66ce604a",
+      "source_url": "https://stats.nba.com/stats/teamgamelog?DateFrom=&DateTo=&LeagueID=00&Season=2019-20&SeasonType=Regular+Season&TeamID=1610612747",
+      "retrieved_at_utc": "2026-09-20T18:01:59.858891+00:00"
+    },
+    {
+      "file": "raw/team_2020-21.json",
+      "sha256": "bad0356846cc58858b0e5366430db47533201089805b9eb0a35c97a569191c5b",
+      "source_url": "https://stats.nba.com/stats/teamgamelog?DateFrom=&DateTo=&LeagueID=00&Season=2020-21&SeasonType=Regular+Season&TeamID=1610612747",
+      "retrieved_at_utc": "2026-09-20T18:02:02.746218+00:00"
+    },
+    {
+      "file": "raw/team_2021-22.json",
+      "sha256": "0333236f3ea613cb82e2c343e87c5a282505bccf9578dc5cf29e3fb9a90bdce5",
+      "source_url": "https://stats.nba.com/stats/teamgamelog?DateFrom=&DateTo=&LeagueID=00&Season=2021-22&SeasonType=Regular+Season&TeamID=1610612747",
+      "retrieved_at_utc": "2026-09-20T18:02:05.306583+00:00"
+    },
+    {
+      "file": "raw/team_2022-23.json",
+      "sha256": "6515ec52559254456902aacedae37b9c1f021fad151fd26b10b68a0d1f477f96",
+      "source_url": "https://stats.nba.com/stats/teamgamelog?DateFrom=&DateTo=&LeagueID=00&Season=2022-23&SeasonType=Regular+Season&TeamID=1610612747",
+      "retrieved_at_utc": "2026-09-20T18:02:08.182866+00:00"
+    },
+    {
+      "file": "raw/team_2023-24.json",
+      "sha256": "1f620ef449e05248cfe0129ce84702ef5929697f8213f0dfc6e543422f846930",
+      "source_url": "https://stats.nba.com/stats/teamgamelog?DateFrom=&DateTo=&LeagueID=00&Season=2023-24&SeasonType=Regular+Season&TeamID=1610612747",
+      "retrieved_at_utc": "2026-09-20T18:02:10.263587+00:00"
+    },
+    {
+      "file": "raw/team_2024-25.json",
+      "sha256": "e96b3d3b8affcd7d774b550174be46cc2b416434fe979638dd7201847eada586",
+      "source_url": "https://stats.nba.com/stats/teamgamelog?DateFrom=&DateTo=&LeagueID=00&Season=2024-25&SeasonType=Regular+Season&TeamID=1610612747",
+      "retrieved_at_utc": "2026-09-20T18:02:12.444852+00:00"
+    },
+    {
+      "file": "raw/team_2025-26.json",
+      "sha256": "697d8f56ff3c6ac7832cf24ab9e0ae37657034b8f51d78e5646c862d02481c87",
+      "source_url": "https://stats.nba.com/stats/teamgamelog?DateFrom=&DateTo=&LeagueID=00&Season=2025-26&SeasonType=Regular+Season&TeamID=1610612747",
+      "retrieved_at_utc": "2026-09-20T18:02:14.778580+00:00"
+    }
+  ]
+}

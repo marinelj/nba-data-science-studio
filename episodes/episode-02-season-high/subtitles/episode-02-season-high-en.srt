@@ -1,0 +1,167 @@
+1
+00:00:00,000 --> 00:00:10,000
+When will LeBron first reach his highest score of the season? Let us study twenty-three seasons of NBA data.
+
+2
+00:00:10,000 --> 00:00:20,000
+An empirical distribution describes the historical timing. Correlation and linear regression help us test whether age and debut points add useful information.
+
+3
+00:00:20,000 --> 00:00:30,000
+Our outcome is the team's game number, including games he missed. If he ties his season high, we select the earliest game.
+
+4
+00:00:30,000 --> 00:00:40,000
+First, draw a season as a horizontal line from game one to game eighty-two. Mark the first game with the season's highest score.
+
+5
+00:00:40,000 --> 00:00:50,000
+Each season contributes one mark. For a small, imaginary example, place four marks at games ten, thirty, thirty, and seventy.
+
+6
+00:00:50,000 --> 00:01:00,000
+Now stack repeated marks. Game thirty appears twice out of four seasons, so its empirical probability is one half.
+
+7
+00:01:00,000 --> 00:01:10,000
+Draw bars at ten, thirty, and seventy, with heights one quarter, one half, and one quarter. This is the empirical PMF.
+
+8
+00:01:10,000 --> 00:01:20,000
+For the CDF, move from left to right and accumulate probability. At game thirty, three of four marks have been counted.
+
+9
+00:01:20,000 --> 00:01:30,000
+Draw a staircase: one quarter at ten, three quarters at thirty, and one at seventy. Between observed positions, the CDF stays flat.
+
+10
+00:01:30,000 --> 00:01:40,000
+Game numbers are discrete, so exact probabilities use a PMF. A PDF describes continuous density, where probability comes from area.
+
+11
+00:01:40,000 --> 00:01:50,000
+A density histogram can summarize grouped season positions, but it is an approximation. Its bar heights are densities, not individual game probabilities.
+
+12
+00:01:50,000 --> 00:02:00,000
+In Python, normalized value counts build the PMF. A cumulative sum builds the CDF. Let us replace the imaginary marks with real data.
+
+13
+00:02:00,000 --> 00:02:10,000
+We import pandas, NumPy, and Matplotlib. Our cached NBA responses keep the recording reproducible, so we do not wait for downloads on camera.
+
+14
+00:02:10,000 --> 00:02:20,000
+The download script uses the third-party nba_api wrapper to request official NBA player and team game logs, limited to regular-season games.
+
+15
+00:02:20,000 --> 00:02:30,000
+We parse dates and sort chronologically. Then we number every team game. Missing a game does not pause the team's season counter.
+
+16
+00:02:30,000 --> 00:02:40,000
+Next, merge LeBron's appearances with his team's schedule using game IDs. A one-to-one validation rejects duplicate matches, and unmatched games raise an error.
+
+17
+00:02:40,000 --> 00:02:50,000
+For each season, compute the maximum points. Filter to games with that score, then select the earliest. This resolves ties explicitly.
+
+18
+00:02:50,000 --> 00:03:00,000
+Keep the team's game number and LeBron's appearance number separately. The first is our target. The second helps check the meaning of each row.
+
+19
+00:03:00,000 --> 00:03:10,000
+Age is measured on his first appearance that season. We also record debut field goals made, debut total points, and season-high points.
+
+20
+00:03:10,000 --> 00:03:20,000
+These are different quantities. The correlation uses debut FGM. The regression uses debut points. Season-high points help define the target, but never enter the predictors.
+
+21
+00:03:20,000 --> 00:03:30,000
+The dataset has twenty-three seasons, beginning in two thousand three. We reconcile every player's game count, points, and FGM against NBA season totals.
+
+22
+00:03:30,000 --> 00:03:40,000
+Only twenty seasons contain eighty-two team games. Three contain sixty-six, seventy-one, and seventy-two games, so we preserve their actual schedule lengths.
+
+23
+00:03:40,000 --> 00:03:50,000
+Our main analysis uses actual game numbers across all seasons. We also compare only full schedules and a separately labeled eighty-two-game equivalent.
+
+24
+00:03:50,000 --> 00:04:00,000
+Now select the target column. Each row contributes one first-maximum position, regardless of how many games LeBron played during that season.
+
+25
+00:04:00,000 --> 00:04:10,000
+Value counts with normalize set to true gives relative frequencies. Reindex from one through eighty-two to include game numbers that never occurred.
+
+26
+00:04:10,000 --> 00:04:20,000
+Apply cumulative sum to get the empirical CDF. By team game forty-one, 43.5 percent of these historical season highs had first occurred.
+
+27
+00:04:20,000 --> 00:04:30,000
+That is a descriptive frequency, not a guaranteed probability for next season. A zero-frequency game number is also possible in future data.
+
+28
+00:04:30,000 --> 00:04:40,000
+Next, calculate Pearson correlation. Age and debut FGM have a correlation of minus zero point zero eight five, showing little linear association in this sample.
+
+29
+00:04:40,000 --> 00:04:50,000
+Age and season-high points have a correlation of minus zero point two five eight. The association is negative, but it does not establish a causal effect of aging.
+
+30
+00:04:50,000 --> 00:05:00,000
+These observations come from one career. Age also tracks changes in teams, playing time, injuries, and role. The notebook includes rank correlation as a check.
+
+31
+00:05:00,000 --> 00:05:10,000
+Now build the regression matrix: one column for the intercept, one for age, and one for debut points. Our response is the first-maximum game number.
+
+32
+00:05:10,000 --> 00:05:20,000
+NumPy's least-squares function estimates three coefficients. The fitted equation starts at seven five point seven three, subtracting one point zero one eight times age and zero point one five four times debut points.
+
+33
+00:05:20,000 --> 00:05:30,000
+Each slope describes a conditional linear association while holding the other predictor fixed. We can use both inputs only after his season debut is complete.
+
+34
+00:05:30,000 --> 00:05:40,000
+To evaluate prediction, train on the first ten seasons and predict the next. Expand the training window, then repeat for every later season.
+
+35
+00:05:40,000 --> 00:05:50,000
+Each prediction uses only earlier seasons for training. Compare it with the average target from those same earlier seasons, our simple baseline.
+
+36
+00:05:50,000 --> 00:06:00,000
+Across thirteen held-out seasons, regression has a mean absolute error of one eight point four three games. The historical-mean baseline has an error of one eight point eight one games.
+
+37
+00:06:00,000 --> 00:06:10,000
+That improvement is small. Regression also has worse root mean squared error, so these predictors have not demonstrated a clear forecasting advantage.
+
+38
+00:06:10,000 --> 00:06:20,000
+The notebook lets us enter an age and debut score for a scenario. It labels extrapolation and keeps the raw prediction visible before rounding.
+
+39
+00:06:20,000 --> 00:06:30,000
+Here are the distributions, age relationships, and prediction errors. Take a brief look, then return to the main lesson about uncertainty.
+
+40
+00:06:30,000 --> 00:06:40,000
+The PMF describes exact historical positions, and the CDF answers by which game. A density histogram offers a grouped approximation.
+
+41
+00:06:40,000 --> 00:06:50,000
+Correlation describes association. Regression turns selected inputs into a prediction, but its usefulness must be tested against a simple baseline.
+
+42
+00:06:50,000 --> 00:07:00,000
+Here, age and debut points leave substantial uncertainty. We learned how to build an honest model, and how to recognize its limits.

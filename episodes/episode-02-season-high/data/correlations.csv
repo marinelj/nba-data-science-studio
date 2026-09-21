@@ -1,0 +1,3 @@
+x,y,n,pearson_r,spearman_rho
+age_at_debut,debut_fgm,23,-0.08549769808437094,-0.09531412805633867
+age_at_debut,season_high_points,23,-0.25781743835961696,-0.26779257874145646
