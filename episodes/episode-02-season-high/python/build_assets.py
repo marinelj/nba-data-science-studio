@@ -11,6 +11,11 @@ DATA = ROOT / "data"
 SUBTITLES = ROOT / "subtitles"
 HTML = ROOT / "html"
 PYTHON = ROOT / "python"
+AUDIO = ROOT / "audio"
+
+ONES = ["zero", "one", "two", "three", "four", "five", "six", "seven", "eight", "nine", "ten",
+        "eleven", "twelve", "thirteen", "fourteen", "fifteen", "sixteen", "seventeen", "eighteen", "nineteen"]
+TENS = ["", "", "twenty", "thirty", "forty", "fifty", "sixty", "seventy", "eighty", "ninety"]
 
 
 def timestamp(seconds):
@@ -18,13 +23,26 @@ def timestamp(seconds):
     return f"00:{minutes:02d}:{secs:02d},000"
 
 
+def audio_name(cue_number):
+    return f"episode-02-cue-{cue_number:02d}.mp3"
+
+
+def integer_words(n):
+    if n < 20:
+        return ONES[n]
+    if n < 100:
+        tens, ones = divmod(n, 10)
+        return TENS[tens] + (f"-{ONES[ones]}" if ones else "")
+    if n < 1000:
+        hundreds, rest = divmod(n, 100)
+        return f"{ONES[hundreds]} hundred" + (f" {integer_words(rest)}" if rest else "")
+    raise ValueError(f"No spoken form for {n}")
+
+
 def spoken_number(value, decimals=3):
-    rounded = f"{abs(value):.{decimals}f}"
-    digits = {"0": "zero", "1": "one", "2": "two", "3": "three", "4": "four",
-              "5": "five", "6": "six", "7": "seven", "8": "eight", "9": "nine"}
-    whole, fraction = rounded.split(".")
+    whole, fraction = f"{abs(value):.{decimals}f}".split(".")
     sign = "minus " if value < 0 else ""
-    return sign + " ".join(digits[d] for d in whole) + " point " + " ".join(digits[d] for d in fraction)
+    return f"{sign}{integer_words(int(whole))} point " + " ".join(ONES[int(d)] for d in fraction)
 
 
 def build_cues(results):
@@ -167,6 +185,7 @@ def build_html(results, seasons, cues, steps):
         "__SEASONS_JSON__": json.dumps(seasons, separators=(",", ":")),
         "__CUES_JSON__": json.dumps(cues, separators=(",", ":")),
         "__STEPS_JSON__": json.dumps(steps, separators=(",", ":")),
+        "__AUDIO_JSON__": json.dumps([f"../audio/{audio_name(n)}" for n in range(1, len(cues) + 1)]),
         "__FIGURES_JSON__": json.dumps([f"../images/{name}" for name in [
             "01-empirical-pmf-cdf.png", "02-age-correlations.png",
             "03-regression-backtest.png", "04-schedule-and-density.png"]]),

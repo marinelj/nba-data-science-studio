@@ -4,6 +4,7 @@ Each numbered folder contains an independent course package.
 
 ```text
 episode-XX-topic/
+├── audio/      # Narration clips rendered from the subtitles
 ├── data/       # Raw source evidence and derived tables
 ├── html/       # Recording and teaching page
 ├── images/     # Generated analysis figures

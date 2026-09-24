@@ -1,0 +1,260 @@
+{
+  "model": "hexgrad/Kokoro-82M",
+  "kokoro_version": "0.9.4",
+  "voice": "af_heart",
+  "speed": 1.0,
+  "clips": [
+    {
+      "file": "episode-02-cue-01.mp3",
+      "text": "When will LeBron first reach his highest score of the season? Let us study twenty-three seasons of NBA data.",
+      "seconds": 6.88,
+      "slot_seconds": 10
+    },
+    {
+      "file": "episode-02-cue-02.mp3",
+      "text": "An empirical distribution describes the historical timing. Correlation and linear regression help us test whether age and debut points add useful information.",
+      "seconds": 11.05,
+      "slot_seconds": 10
+    },
+    {
+      "file": "episode-02-cue-03.mp3",
+      "text": "Our outcome is the team's game number, including games he missed. If he ties his season high, we select the earliest game.",
+      "seconds": 7.97,
+      "slot_seconds": 10
+    },
+    {
+      "file": "episode-02-cue-04.mp3",
+      "text": "First, draw a season as a horizontal line from game one to game eighty-two. Mark the first game with the season's highest score.",
+      "seconds": 8.28,
+      "slot_seconds": 10
+    },
+    {
+      "file": "episode-02-cue-05.mp3",
+      "text": "Each season contributes one mark. For a small, imaginary example, place four marks at games ten, thirty, thirty, and seventy.",
+      "seconds": 8.78,
+      "slot_seconds": 10
+    },
+    {
+      "file": "episode-02-cue-06.mp3",
+      "text": "Now stack repeated marks. Game thirty appears twice out of four seasons, so its empirical probability is one half.",
+      "seconds": 8.03,
+      "slot_seconds": 10
+    },
+    {
+      "file": "episode-02-cue-07.mp3",
+      "text": "Draw bars at ten, thirty, and seventy, with heights one quarter, one half, and one quarter. This is the empirical PMF.",
+      "seconds": 8.32,
+      "slot_seconds": 10
+    },
+    {
+      "file": "episode-02-cue-08.mp3",
+      "text": "For the CDF, move from left to right and accumulate probability. At game thirty, three of four marks have been counted.",
+      "seconds": 8.05,
+      "slot_seconds": 10
+    },
+    {
+      "file": "episode-02-cue-09.mp3",
+      "text": "Draw a staircase: one quarter at ten, three quarters at thirty, and one at seventy. Between observed positions, the CDF stays flat.",
+      "seconds": 9.35,
+      "slot_seconds": 10
+    },
+    {
+      "file": "episode-02-cue-10.mp3",
+      "text": "Game numbers are discrete, so exact probabilities use a PMF. A PDF describes continuous density, where probability comes from area.",
+      "seconds": 9.88,
+      "slot_seconds": 10
+    },
+    {
+      "file": "episode-02-cue-11.mp3",
+      "text": "A density histogram can summarize grouped season positions, but it is an approximation. Its bar heights are densities, not individual game probabilities.",
+      "seconds": 10.4,
+      "slot_seconds": 10
+    },
+    {
+      "file": "episode-02-cue-12.mp3",
+      "text": "In Python, normalized value counts build the PMF. A cumulative sum builds the CDF. Let us replace the imaginary marks with real data.",
+      "seconds": 10.45,
+      "slot_seconds": 10
+    },
+    {
+      "file": "episode-02-cue-13.mp3",
+      "text": "We import pandas, NumPy, and Matplotlib. Our cached NBA responses keep the recording reproducible, so we do not wait for downloads on camera.",
+      "seconds": 10.18,
+      "slot_seconds": 10
+    },
+    {
+      "file": "episode-02-cue-14.mp3",
+      "text": "The download script uses the third-party nba_api wrapper to request official NBA player and team game logs, limited to regular-season games.",
+      "seconds": 10.55,
+      "slot_seconds": 10
+    },
+    {
+      "file": "episode-02-cue-15.mp3",
+      "text": "We parse dates and sort chronologically. Then we number every team game. Missing a game does not pause the team's season counter.",
+      "seconds": 8.4,
+      "slot_seconds": 10
+    },
+    {
+      "file": "episode-02-cue-16.mp3",
+      "text": "Next, merge LeBron's appearances with his team's schedule using game IDs. A one-to-one validation rejects duplicate matches, and unmatched games raise an error.",
+      "seconds": 11.18,
+      "slot_seconds": 10
+    },
+    {
+      "file": "episode-02-cue-17.mp3",
+      "text": "For each season, compute the maximum points. Filter to games with that score, then select the earliest. This resolves ties explicitly.",
+      "seconds": 9.0,
+      "slot_seconds": 10
+    },
+    {
+      "file": "episode-02-cue-18.mp3",
+      "text": "Keep the team's game number and LeBron's appearance number separately. The first is our target. The second helps check the meaning of each row.",
+      "seconds": 9.15,
+      "slot_seconds": 10
+    },
+    {
+      "file": "episode-02-cue-19.mp3",
+      "text": "Age is measured on his first appearance that season. We also record debut field goals made, debut total points, and season-high points.",
+      "seconds": 8.9,
+      "slot_seconds": 10
+    },
+    {
+      "file": "episode-02-cue-20.mp3",
+      "text": "These are different quantities. The correlation uses debut FGM. The regression uses debut points. Season-high points help define the target, but never enter the predictors.",
+      "seconds": 11.88,
+      "slot_seconds": 10
+    },
+    {
+      "file": "episode-02-cue-21.mp3",
+      "text": "The dataset has twenty-three seasons, beginning in two thousand three. We reconcile every player's game count, points, and FGM against NBA season totals.",
+      "seconds": 10.72,
+      "slot_seconds": 10
+    },
+    {
+      "file": "episode-02-cue-22.mp3",
+      "text": "Only twenty seasons contain eighty-two team games. Three contain sixty-six, seventy-one, and seventy-two games, so we preserve their actual schedule lengths.",
+      "seconds": 10.65,
+      "slot_seconds": 10
+    },
+    {
+      "file": "episode-02-cue-23.mp3",
+      "text": "Our main analysis uses actual game numbers across all seasons. We also compare only full schedules and a separately labeled eighty-two-game equivalent.",
+      "seconds": 10.0,
+      "slot_seconds": 10
+    },
+    {
+      "file": "episode-02-cue-24.mp3",
+      "text": "Now select the target column. Each row contributes one first-maximum position, regardless of how many games LeBron played during that season.",
+      "seconds": 9.75,
+      "slot_seconds": 10
+    },
+    {
+      "file": "episode-02-cue-25.mp3",
+      "text": "Value counts with normalize set to true gives relative frequencies. Reindex from one through eighty-two to include game numbers that never occurred.",
+      "seconds": 9.6,
+      "slot_seconds": 10
+    },
+    {
+      "file": "episode-02-cue-26.mp3",
+      "text": "Apply cumulative sum to get the empirical CDF. By team game forty-one, 43.5 percent of these historical season highs had first occurred.",
+      "seconds": 10.65,
+      "slot_seconds": 10
+    },
+    {
+      "file": "episode-02-cue-27.mp3",
+      "text": "That is a descriptive frequency, not a guaranteed probability for next season. A zero-frequency game number is also possible in future data.",
+      "seconds": 9.78,
+      "slot_seconds": 10
+    },
+    {
+      "file": "episode-02-cue-28.mp3",
+      "text": "Next, calculate Pearson correlation. Age and debut FGM have a correlation of minus zero point zero eight five, showing little linear association in this sample.",
+      "seconds": 11.78,
+      "slot_seconds": 10
+    },
+    {
+      "file": "episode-02-cue-29.mp3",
+      "text": "Age and season-high points have a correlation of minus zero point two five eight. The association is negative, but it does not establish a causal effect of aging.",
+      "seconds": 10.85,
+      "slot_seconds": 10
+    },
+    {
+      "file": "episode-02-cue-30.mp3",
+      "text": "These observations come from one career. Age also tracks changes in teams, playing time, injuries, and role. The notebook includes rank correlation as a check.",
+      "seconds": 11.12,
+      "slot_seconds": 10
+    },
+    {
+      "file": "episode-02-cue-31.mp3",
+      "text": "Now build the regression matrix: one column for the intercept, one for age, and one for debut points. Our response is the first-maximum game number.",
+      "seconds": 9.93,
+      "slot_seconds": 10
+    },
+    {
+      "file": "episode-02-cue-32.mp3",
+      "text": "NumPy's least-squares function estimates three coefficients. The fitted equation starts at seventy-five point seven three, subtracting one point zero one eight times age and zero point one five four times debut points.",
+      "seconds": 14.72,
+      "slot_seconds": 10
+    },
+    {
+      "file": "episode-02-cue-33.mp3",
+      "text": "Each slope describes a conditional linear association while holding the other predictor fixed. We can use both inputs only after his season debut is complete.",
+      "seconds": 10.15,
+      "slot_seconds": 10
+    },
+    {
+      "file": "episode-02-cue-34.mp3",
+      "text": "To evaluate prediction, train on the first ten seasons and predict the next. Expand the training window, then repeat for every later season.",
+      "seconds": 9.1,
+      "slot_seconds": 10
+    },
+    {
+      "file": "episode-02-cue-35.mp3",
+      "text": "Each prediction uses only earlier seasons for training. Compare it with the average target from those same earlier seasons, our simple baseline.",
+      "seconds": 9.53,
+      "slot_seconds": 10
+    },
+    {
+      "file": "episode-02-cue-36.mp3",
+      "text": "Across thirteen held-out seasons, regression has a mean absolute error of eighteen point four three games. The historical-mean baseline has an error of eighteen point eight one games.",
+      "seconds": 11.9,
+      "slot_seconds": 10
+    },
+    {
+      "file": "episode-02-cue-37.mp3",
+      "text": "That improvement is small. Regression also has worse root mean squared error, so these predictors have not demonstrated a clear forecasting advantage.",
+      "seconds": 9.85,
+      "slot_seconds": 10
+    },
+    {
+      "file": "episode-02-cue-38.mp3",
+      "text": "The notebook lets us enter an age and debut score for a scenario. It labels extrapolation and keeps the raw prediction visible before rounding.",
+      "seconds": 9.45,
+      "slot_seconds": 10
+    },
+    {
+      "file": "episode-02-cue-39.mp3",
+      "text": "Here are the distributions, age relationships, and prediction errors. Take a brief look, then return to the main lesson about uncertainty.",
+      "seconds": 8.78,
+      "slot_seconds": 10
+    },
+    {
+      "file": "episode-02-cue-40.mp3",
+      "text": "The PMF describes exact historical positions, and the CDF answers by which game. A density histogram offers a grouped approximation.",
+      "seconds": 10.2,
+      "slot_seconds": 10
+    },
+    {
+      "file": "episode-02-cue-41.mp3",
+      "text": "Correlation describes association. Regression turns selected inputs into a prediction, but its usefulness must be tested against a simple baseline.",
+      "seconds": 10.35,
+      "slot_seconds": 10
+    },
+    {
+      "file": "episode-02-cue-42.mp3",
+      "text": "Here, age and debut points leave substantial uncertainty. We learned how to build an honest model, and how to recognize its limits.",
+      "seconds": 8.8,
+      "slot_seconds": 10
+    }
+  ]
+}

@@ -41,6 +41,17 @@ python python/episode_02_season_high.py
 python python/build_assets.py
 ```
 
+## Narration voice
+
+The recording lab's **Voice** button plays one clip per subtitle cue, rendered offline by the open-source [Kokoro-82M](https://huggingface.co/hexgrad/Kokoro-82M) model (Apache-2.0). If a clip runs past its 10-second cue, the lab holds the clock until the clip finishes. Regenerate the clips whenever the subtitles change:
+
+```bash
+uv run python/build_narration_audio.py              # default voice: af_heart
+uv run python/build_narration_audio.py --voice am_michael --speed 1.05
+```
+
+`uv` builds a separate Python 3.12 environment with PyTorch for this script only. The first run downloads the model (about 330 MB) into the Hugging Face cache.
+
 ## Course assets
 
 - [`episode-02-outline.md`](episode-02-outline.md)
@@ -48,5 +59,6 @@ python python/build_assets.py
 - [`python/episode_02_season_high.ipynb`](python/episode_02_season_high.ipynb)
 - [`subtitles/episode-02-season-high-en.srt`](subtitles/episode-02-season-high-en.srt)
 - [`subtitles/episode-02-script.md`](subtitles/episode-02-script.md)
+- [`audio/narration-manifest.json`](audio/narration-manifest.json)
 - [`data/season_summary.csv`](data/season_summary.csv)
 - [`data/source_manifest.json`](data/source_manifest.json)

@@ -1,5 +1,6 @@
 """Focused checks for the statistical definition and leakage boundaries."""
 
+import json
 import unittest
 from pathlib import Path
 import sys
@@ -9,6 +10,7 @@ import pandas as pd
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 
+from build_assets import AUDIO, DATA, build_cues, integer_words, spoken_number
 from fetch_data import prepare_log, season_summary
 from episode_02_season_high import empirical_distribution, fit_ols, load_data, walk_forward
 
@@ -68,6 +70,22 @@ class EpisodeTests(unittest.TestCase):
         earlier = pd.read_csv(episode_one / "lebron_season_debut_fgm_2003_2025.csv")
         joined = table.merge(earlier, on="season", validate="one_to_one")
         self.assertTrue(joined.debut_fgm.eq(joined.fgm).all())
+
+    def test_spoken_numbers_use_natural_english(self):
+        self.assertEqual(spoken_number(75.728, 2), "seventy-five point seven three")
+        self.assertEqual(spoken_number(-0.0854), "minus zero point zero eight five")
+        self.assertEqual(spoken_number(18.43, 2), "eighteen point four three")
+        self.assertEqual(integer_words(40), "forty")
+        self.assertEqual(integer_words(115), "one hundred fifteen")
+        with self.assertRaises(ValueError): integer_words(1000)
+
+    def test_narration_audio_matches_current_subtitles(self):
+        manifest = json.loads((AUDIO / "narration-manifest.json").read_text())
+        cues = build_cues(json.loads((DATA / "results.json").read_text()))
+        self.assertEqual([clip["text"] for clip in manifest["clips"]], [cue["text"] for cue in cues],
+                         "Narration is stale. Run: uv run python/build_narration_audio.py")
+        for clip in manifest["clips"]:
+            self.assertGreater((AUDIO / clip["file"]).stat().st_size, 0, clip["file"])
 
 
 if __name__ == "__main__":

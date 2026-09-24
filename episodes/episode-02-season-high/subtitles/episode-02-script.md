@@ -68,7 +68,7 @@ These observations come from one career. Age also tracks changes in teams, playi
 
 Now build the regression matrix: one column for the intercept, one for age, and one for debut points. Our response is the first-maximum game number.
 
-NumPy's least-squares function estimates three coefficients. The fitted equation starts at seven five point seven three, subtracting one point zero one eight times age and zero point one five four times debut points.
+NumPy's least-squares function estimates three coefficients. The fitted equation starts at seventy-five point seven three, subtracting one point zero one eight times age and zero point one five four times debut points.
 
 Each slope describes a conditional linear association while holding the other predictor fixed. We can use both inputs only after his season debut is complete.
 
@@ -76,7 +76,7 @@ To evaluate prediction, train on the first ten seasons and predict the next. Exp
 
 Each prediction uses only earlier seasons for training. Compare it with the average target from those same earlier seasons, our simple baseline.
 
-Across thirteen held-out seasons, regression has a mean absolute error of one eight point four three games. The historical-mean baseline has an error of one eight point eight one games.
+Across thirteen held-out seasons, regression has a mean absolute error of eighteen point four three games. The historical-mean baseline has an error of eighteen point eight one games.
 
 That improvement is small. Regression also has worse root mean squared error, so these predictors have not demonstrated a clear forecasting advantage.
 
