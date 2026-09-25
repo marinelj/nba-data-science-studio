@@ -38,8 +38,8 @@ Refresh the NBA responses intentionally:
 ```bash
 python episodes/episode-02-season-high/python/fetch_data.py --refresh
 python episodes/episode-02-season-high/python/episode_02_season_high.py
-python episodes/episode-02-season-high/python/build_assets.py
 uv run episodes/episode-02-season-high/python/build_narration_audio.py
+python episodes/episode-02-season-high/python/build_assets.py
 ```
 
 To present the lessons in Jupyter, open the notebook in the episode's `python` folder and run its cells from top to bottom.

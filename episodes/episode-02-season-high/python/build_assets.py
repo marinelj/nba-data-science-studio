@@ -1,5 +1,6 @@
 """Build the notebook, timed narration, teleprompter parts and course HTML."""
 
+import base64
 import json
 import re
 from pathlib import Path
@@ -12,6 +13,7 @@ SUBTITLES = ROOT / "subtitles"
 HTML = ROOT / "html"
 PYTHON = ROOT / "python"
 AUDIO = ROOT / "audio"
+IMAGES = ROOT / "images"
 
 ONES = ["zero", "one", "two", "three", "four", "five", "six", "seven", "eight", "nine", "ten",
         "eleven", "twelve", "thirteen", "fourteen", "fifteen", "sixteen", "seventeen", "eighteen", "nineteen"]
@@ -25,6 +27,17 @@ def timestamp(seconds):
 
 def audio_name(cue_number):
     return f"episode-02-cue-{cue_number:02d}.mp3"
+
+
+def data_uri(path, mime):
+    return f"data:{mime};base64,{base64.b64encode(path.read_bytes()).decode('ascii')}"
+
+
+def narration_clips(cues):
+    manifest = json.loads((AUDIO / "narration-manifest.json").read_text())
+    if [clip["text"] for clip in manifest["clips"]] != [cue["text"] for cue in cues]:
+        raise ValueError("Narration audio is stale. Run: uv run python/build_narration_audio.py")
+    return [data_uri(AUDIO / clip["file"], "audio/mpeg") for clip in manifest["clips"]]
 
 
 def integer_words(n):
@@ -185,8 +198,9 @@ def build_html(results, seasons, cues, steps):
         "__SEASONS_JSON__": json.dumps(seasons, separators=(",", ":")),
         "__CUES_JSON__": json.dumps(cues, separators=(",", ":")),
         "__STEPS_JSON__": json.dumps(steps, separators=(",", ":")),
-        "__AUDIO_JSON__": json.dumps([f"../audio/{audio_name(n)}" for n in range(1, len(cues) + 1)]),
-        "__FIGURES_JSON__": json.dumps([f"../images/{name}" for name in [
+        # Embedded, because Jupyter's /files/ sandboxes HTML pages and their own requests arrive logged out.
+        "__AUDIO_JSON__": json.dumps(narration_clips(cues)),
+        "__FIGURES_JSON__": json.dumps([data_uri(IMAGES / name, "image/png") for name in [
             "01-empirical-pmf-cdf.png", "02-age-correlations.png",
             "03-regression-backtest.png", "04-schedule-and-density.png"]]),
     }

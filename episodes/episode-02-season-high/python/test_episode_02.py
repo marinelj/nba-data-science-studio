@@ -1,5 +1,6 @@
 """Focused checks for the statistical definition and leakage boundaries."""
 
+import base64
 import json
 import unittest
 from pathlib import Path
@@ -10,7 +11,7 @@ import pandas as pd
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 
-from build_assets import AUDIO, DATA, build_cues, integer_words, spoken_number
+from build_assets import AUDIO, DATA, audio_name, build_cues, integer_words, narration_clips, spoken_number
 from fetch_data import prepare_log, season_summary
 from episode_02_season_high import empirical_distribution, fit_ols, load_data, walk_forward
 
@@ -79,13 +80,20 @@ class EpisodeTests(unittest.TestCase):
         self.assertEqual(integer_words(115), "one hundred fifteen")
         with self.assertRaises(ValueError): integer_words(1000)
 
-    def test_narration_audio_matches_current_subtitles(self):
-        manifest = json.loads((AUDIO / "narration-manifest.json").read_text())
+    def test_narration_clips_match_subtitles_and_embed_as_mp3(self):
         cues = build_cues(json.loads((DATA / "results.json").read_text()))
-        self.assertEqual([clip["text"] for clip in manifest["clips"]], [cue["text"] for cue in cues],
-                         "Narration is stale. Run: uv run python/build_narration_audio.py")
-        for clip in manifest["clips"]:
-            self.assertGreater((AUDIO / clip["file"]).stat().st_size, 0, clip["file"])
+        clips = narration_clips(cues)
+        self.assertEqual(len(clips), len(cues))
+        for number, clip in enumerate(clips, 1):
+            header, payload = clip.split(",", 1)
+            self.assertEqual(header, "data:audio/mpeg;base64", number)
+            self.assertEqual(base64.b64decode(payload), (AUDIO / audio_name(number)).read_bytes(), number)
+
+    def test_stale_narration_is_rejected(self):
+        cues = build_cues(json.loads((DATA / "results.json").read_text()))
+        cues[0] = {**cues[0], "text": cues[0]["text"] + " Edited."}
+        with self.assertRaisesRegex(ValueError, "stale"):
+            narration_clips(cues)
 
 
 if __name__ == "__main__":

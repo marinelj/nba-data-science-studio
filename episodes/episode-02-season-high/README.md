@@ -38,19 +38,23 @@ Refresh the official NBA responses only when intended:
 ```bash
 python python/fetch_data.py --refresh
 python python/episode_02_season_high.py
+uv run python/build_narration_audio.py
 python python/build_assets.py
 ```
 
 ## Narration voice
 
-The recording lab's **Voice** button plays one clip per subtitle cue, rendered offline by the open-source [Kokoro-82M](https://huggingface.co/hexgrad/Kokoro-82M) model (Apache-2.0). If a clip runs past its 10-second cue, the lab holds the clock until the clip finishes. Regenerate the clips whenever the subtitles change:
+The recording lab's **Voice** button plays one clip per subtitle cue, rendered offline by the open-source [Kokoro-82M](https://huggingface.co/hexgrad/Kokoro-82M) model (Apache-2.0). If a clip runs past its 10-second cue, the lab holds the clock until the clip finishes. Regenerate the clips whenever the subtitles change, then rebuild the lab:
 
 ```bash
 uv run python/build_narration_audio.py              # default voice: af_heart
 uv run python/build_narration_audio.py --voice am_michael --speed 1.05
+python python/build_assets.py
 ```
 
 `uv` builds a separate Python 3.12 environment with PyTorch for this script only. The first run downloads the model (about 330 MB) into the Hugging Face cache.
+
+`build_assets.py` embeds the clips and figures into the HTML, and it refuses to use clips that no longer match the subtitles. The page is self-contained, so it works when opened from disk, from a static server, or from JupyterLab. JupyterLab sandboxes HTML opened from `/files/`, and the page's own requests for separate audio or image files would reach the server without the login cookie.
 
 ## Course assets
 
