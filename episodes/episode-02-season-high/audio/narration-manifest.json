@@ -8,253 +8,4137 @@
       "file": "episode-02-cue-01.mp3",
       "text": "When will LeBron first reach his highest score of the season? Let us study twenty-three seasons of NBA data.",
       "seconds": 6.88,
-      "slot_seconds": 10
+      "slot_seconds": 10,
+      "words": [
+        [
+          0.25,
+          "When "
+        ],
+        [
+          0.375,
+          "will "
+        ],
+        [
+          0.512,
+          "LeBron "
+        ],
+        [
+          1.062,
+          "first "
+        ],
+        [
+          1.375,
+          "reach "
+        ],
+        [
+          1.613,
+          "his "
+        ],
+        [
+          1.788,
+          "highest "
+        ],
+        [
+          2.175,
+          "score "
+        ],
+        [
+          2.462,
+          "of "
+        ],
+        [
+          2.538,
+          "the "
+        ],
+        [
+          2.625,
+          "season? "
+        ],
+        [
+          3.562,
+          "Let "
+        ],
+        [
+          3.712,
+          "us "
+        ],
+        [
+          3.812,
+          "study "
+        ],
+        [
+          4.15,
+          "twenty-three "
+        ],
+        [
+          4.713,
+          "seasons "
+        ],
+        [
+          5.25,
+          "of "
+        ],
+        [
+          5.412,
+          "NBA "
+        ],
+        [
+          6.0,
+          "data."
+        ]
+      ]
     },
     {
       "file": "episode-02-cue-02.mp3",
       "text": "An empirical distribution describes the historical timing. Correlation and linear regression help us test whether age and debut points add useful information.",
       "seconds": 11.05,
-      "slot_seconds": 10
+      "slot_seconds": 10,
+      "words": [
+        [
+          0.275,
+          "An "
+        ],
+        [
+          0.375,
+          "empirical "
+        ],
+        [
+          0.95,
+          "distribution "
+        ],
+        [
+          1.7,
+          "describes "
+        ],
+        [
+          2.35,
+          "the "
+        ],
+        [
+          2.45,
+          "historical "
+        ],
+        [
+          3.05,
+          "timing. "
+        ],
+        [
+          4.062,
+          "Correlation "
+        ],
+        [
+          4.912,
+          "and "
+        ],
+        [
+          5.075,
+          "linear "
+        ],
+        [
+          5.425,
+          "regression "
+        ],
+        [
+          6.175,
+          "help "
+        ],
+        [
+          6.438,
+          "us "
+        ],
+        [
+          6.612,
+          "test "
+        ],
+        [
+          7.263,
+          "whether "
+        ],
+        [
+          7.6,
+          "age "
+        ],
+        [
+          8.0,
+          "and "
+        ],
+        [
+          8.125,
+          "debut "
+        ],
+        [
+          8.55,
+          "points "
+        ],
+        [
+          9.175,
+          "add "
+        ],
+        [
+          9.463,
+          "useful "
+        ],
+        [
+          9.863,
+          "information."
+        ]
+      ]
     },
     {
       "file": "episode-02-cue-03.mp3",
       "text": "Our outcome is the team's game number, including games he missed. If he ties his season high, we select the earliest game.",
       "seconds": 7.97,
-      "slot_seconds": 10
+      "slot_seconds": 10,
+      "words": [
+        [
+          0.275,
+          "Our "
+        ],
+        [
+          0.463,
+          "outcome "
+        ],
+        [
+          1.0,
+          "is "
+        ],
+        [
+          1.15,
+          "the "
+        ],
+        [
+          1.262,
+          "team's "
+        ],
+        [
+          1.65,
+          "game "
+        ],
+        [
+          1.913,
+          "number, "
+        ],
+        [
+          2.45,
+          "including "
+        ],
+        [
+          2.95,
+          "games "
+        ],
+        [
+          3.288,
+          "he "
+        ],
+        [
+          3.4,
+          "missed. "
+        ],
+        [
+          4.275,
+          "If "
+        ],
+        [
+          4.412,
+          "he "
+        ],
+        [
+          4.525,
+          "ties "
+        ],
+        [
+          4.812,
+          "his "
+        ],
+        [
+          4.95,
+          "season "
+        ],
+        [
+          5.275,
+          "high, "
+        ],
+        [
+          5.85,
+          "we "
+        ],
+        [
+          6.013,
+          "select "
+        ],
+        [
+          6.412,
+          "the "
+        ],
+        [
+          6.537,
+          "earliest "
+        ],
+        [
+          7.075,
+          "game."
+        ]
+      ]
     },
     {
       "file": "episode-02-cue-04.mp3",
       "text": "First, draw a season as a horizontal line from game one to game eighty-two. Mark the first game with the season's highest score.",
       "seconds": 8.28,
-      "slot_seconds": 10
+      "slot_seconds": 10,
+      "words": [
+        [
+          0.3,
+          "First, "
+        ],
+        [
+          0.875,
+          "draw "
+        ],
+        [
+          1.125,
+          "a "
+        ],
+        [
+          1.238,
+          "season "
+        ],
+        [
+          1.738,
+          "as "
+        ],
+        [
+          1.863,
+          "a "
+        ],
+        [
+          1.938,
+          "horizontal "
+        ],
+        [
+          2.6,
+          "line "
+        ],
+        [
+          2.95,
+          "from "
+        ],
+        [
+          3.125,
+          "game "
+        ],
+        [
+          3.425,
+          "one "
+        ],
+        [
+          3.775,
+          "to "
+        ],
+        [
+          3.9,
+          "game "
+        ],
+        [
+          4.15,
+          "eighty-two. "
+        ],
+        [
+          5.237,
+          "Mark "
+        ],
+        [
+          5.5,
+          "the "
+        ],
+        [
+          5.612,
+          "first "
+        ],
+        [
+          5.925,
+          "game "
+        ],
+        [
+          6.237,
+          "with "
+        ],
+        [
+          6.362,
+          "the "
+        ],
+        [
+          6.45,
+          "season's "
+        ],
+        [
+          6.938,
+          "highest "
+        ],
+        [
+          7.35,
+          "score."
+        ]
+      ]
     },
     {
       "file": "episode-02-cue-05.mp3",
       "text": "Each season contributes one mark. For a small, imaginary example, place four marks at games ten, thirty, thirty, and seventy.",
       "seconds": 8.78,
-      "slot_seconds": 10
+      "slot_seconds": 10,
+      "words": [
+        [
+          0.3,
+          "Each "
+        ],
+        [
+          0.537,
+          "season "
+        ],
+        [
+          0.95,
+          "contributes "
+        ],
+        [
+          1.525,
+          "one "
+        ],
+        [
+          1.725,
+          "mark. "
+        ],
+        [
+          2.5,
+          "For "
+        ],
+        [
+          2.638,
+          "a "
+        ],
+        [
+          2.737,
+          "small, "
+        ],
+        [
+          3.25,
+          "imaginary "
+        ],
+        [
+          3.888,
+          "example, "
+        ],
+        [
+          4.65,
+          "place "
+        ],
+        [
+          4.95,
+          "four "
+        ],
+        [
+          5.175,
+          "marks "
+        ],
+        [
+          5.463,
+          "at "
+        ],
+        [
+          5.55,
+          "games "
+        ],
+        [
+          5.912,
+          "ten, "
+        ],
+        [
+          6.537,
+          "thirty, "
+        ],
+        [
+          7.138,
+          "thirty, "
+        ],
+        [
+          7.575,
+          "and "
+        ],
+        [
+          7.713,
+          "seventy."
+        ]
+      ]
     },
     {
       "file": "episode-02-cue-06.mp3",
       "text": "Now stack repeated marks. Game thirty appears twice out of four seasons, so its empirical probability is one half.",
       "seconds": 8.03,
-      "slot_seconds": 10
+      "slot_seconds": 10,
+      "words": [
+        [
+          0.325,
+          "Now "
+        ],
+        [
+          0.588,
+          "stack "
+        ],
+        [
+          0.925,
+          "repeated "
+        ],
+        [
+          1.4,
+          "marks. "
+        ],
+        [
+          2.288,
+          "Game "
+        ],
+        [
+          2.6,
+          "thirty "
+        ],
+        [
+          2.975,
+          "appears "
+        ],
+        [
+          3.413,
+          "twice "
+        ],
+        [
+          3.8,
+          "out "
+        ],
+        [
+          3.962,
+          "of "
+        ],
+        [
+          4.05,
+          "four "
+        ],
+        [
+          4.275,
+          "seasons, "
+        ],
+        [
+          5.1,
+          "so "
+        ],
+        [
+          5.275,
+          "its "
+        ],
+        [
+          5.45,
+          "empirical "
+        ],
+        [
+          6.025,
+          "probability "
+        ],
+        [
+          6.763,
+          "is "
+        ],
+        [
+          6.925,
+          "one "
+        ],
+        [
+          7.15,
+          "half."
+        ]
+      ]
     },
     {
       "file": "episode-02-cue-07.mp3",
       "text": "Draw bars at ten, thirty, and seventy, with heights one quarter, one half, and one quarter. This is the empirical PMF.",
       "seconds": 8.32,
-      "slot_seconds": 10
+      "slot_seconds": 10,
+      "words": [
+        [
+          0.275,
+          "Draw "
+        ],
+        [
+          0.5,
+          "bars "
+        ],
+        [
+          0.875,
+          "at "
+        ],
+        [
+          1.012,
+          "ten, "
+        ],
+        [
+          1.587,
+          "thirty, "
+        ],
+        [
+          2.0,
+          "and "
+        ],
+        [
+          2.138,
+          "seventy, "
+        ],
+        [
+          2.9,
+          "with "
+        ],
+        [
+          3.05,
+          "heights "
+        ],
+        [
+          3.35,
+          "one "
+        ],
+        [
+          3.575,
+          "quarter, "
+        ],
+        [
+          4.075,
+          "one "
+        ],
+        [
+          4.3,
+          "half, "
+        ],
+        [
+          4.662,
+          "and "
+        ],
+        [
+          4.775,
+          "one "
+        ],
+        [
+          5.0,
+          "quarter. "
+        ],
+        [
+          5.95,
+          "This "
+        ],
+        [
+          6.25,
+          "is "
+        ],
+        [
+          6.388,
+          "the "
+        ],
+        [
+          6.525,
+          "empirical "
+        ],
+        [
+          7.138,
+          "PMF."
+        ]
+      ]
     },
     {
       "file": "episode-02-cue-08.mp3",
       "text": "For the CDF, move from left to right and accumulate probability. At game thirty, three of four marks have been counted.",
       "seconds": 8.05,
-      "slot_seconds": 10
+      "slot_seconds": 10,
+      "words": [
+        [
+          0.275,
+          "For "
+        ],
+        [
+          0.388,
+          "the "
+        ],
+        [
+          0.487,
+          "CDF, "
+        ],
+        [
+          1.413,
+          "move "
+        ],
+        [
+          1.725,
+          "from "
+        ],
+        [
+          1.938,
+          "left "
+        ],
+        [
+          2.3,
+          "to "
+        ],
+        [
+          2.438,
+          "right "
+        ],
+        [
+          2.825,
+          "and "
+        ],
+        [
+          2.938,
+          "accumulate "
+        ],
+        [
+          3.575,
+          "probability. "
+        ],
+        [
+          4.825,
+          "At "
+        ],
+        [
+          5.025,
+          "game "
+        ],
+        [
+          5.325,
+          "thirty, "
+        ],
+        [
+          5.963,
+          "three "
+        ],
+        [
+          6.188,
+          "of "
+        ],
+        [
+          6.3,
+          "four "
+        ],
+        [
+          6.525,
+          "marks "
+        ],
+        [
+          6.812,
+          "have "
+        ],
+        [
+          6.912,
+          "been "
+        ],
+        [
+          7.075,
+          "counted."
+        ]
+      ]
     },
     {
       "file": "episode-02-cue-09.mp3",
       "text": "Draw a staircase: one quarter at ten, three quarters at thirty, and one at seventy. Between observed positions, the CDF stays flat.",
       "seconds": 9.35,
-      "slot_seconds": 10
+      "slot_seconds": 10,
+      "words": [
+        [
+          0.275,
+          "Draw "
+        ],
+        [
+          0.525,
+          "a "
+        ],
+        [
+          0.6,
+          "staircase: "
+        ],
+        [
+          1.613,
+          "one "
+        ],
+        [
+          1.85,
+          "quarter "
+        ],
+        [
+          2.225,
+          "at "
+        ],
+        [
+          2.362,
+          "ten, "
+        ],
+        [
+          2.962,
+          "three "
+        ],
+        [
+          3.2,
+          "quarters "
+        ],
+        [
+          3.675,
+          "at "
+        ],
+        [
+          3.8,
+          "thirty, "
+        ],
+        [
+          4.2,
+          "and "
+        ],
+        [
+          4.325,
+          "one "
+        ],
+        [
+          4.6,
+          "at "
+        ],
+        [
+          4.737,
+          "seventy. "
+        ],
+        [
+          5.775,
+          "Between "
+        ],
+        [
+          6.125,
+          "observed "
+        ],
+        [
+          6.575,
+          "positions, "
+        ],
+        [
+          7.375,
+          "the "
+        ],
+        [
+          7.513,
+          "CDF "
+        ],
+        [
+          8.1,
+          "stays "
+        ],
+        [
+          8.488,
+          "flat."
+        ]
+      ]
     },
     {
       "file": "episode-02-cue-10.mp3",
       "text": "Game numbers are discrete, so exact probabilities use a PMF. A PDF describes continuous density, where probability comes from area.",
       "seconds": 9.88,
-      "slot_seconds": 10
+      "slot_seconds": 10,
+      "words": [
+        [
+          0.3,
+          "Game "
+        ],
+        [
+          0.575,
+          "numbers "
+        ],
+        [
+          1.0,
+          "are "
+        ],
+        [
+          1.1,
+          "discrete, "
+        ],
+        [
+          1.9,
+          "so "
+        ],
+        [
+          2.075,
+          "exact "
+        ],
+        [
+          2.575,
+          "probabilities "
+        ],
+        [
+          3.325,
+          "use "
+        ],
+        [
+          3.55,
+          "a "
+        ],
+        [
+          3.663,
+          "PMF. "
+        ],
+        [
+          4.963,
+          "A "
+        ],
+        [
+          5.088,
+          "PDF "
+        ],
+        [
+          5.725,
+          "describes "
+        ],
+        [
+          6.325,
+          "continuous "
+        ],
+        [
+          6.95,
+          "density, "
+        ],
+        [
+          7.725,
+          "where "
+        ],
+        [
+          7.875,
+          "probability "
+        ],
+        [
+          8.525,
+          "comes "
+        ],
+        [
+          8.8,
+          "from "
+        ],
+        [
+          8.95,
+          "area."
+        ]
+      ]
     },
     {
       "file": "episode-02-cue-11.mp3",
       "text": "A density histogram can summarize grouped season positions, but it is an approximation. Its bar heights are densities, not individual game probabilities.",
       "seconds": 10.4,
-      "slot_seconds": 10
+      "slot_seconds": 10,
+      "words": [
+        [
+          0.275,
+          "A "
+        ],
+        [
+          0.362,
+          "density "
+        ],
+        [
+          0.85,
+          "histogram "
+        ],
+        [
+          1.475,
+          "can "
+        ],
+        [
+          1.7,
+          "summarize "
+        ],
+        [
+          2.288,
+          "grouped "
+        ],
+        [
+          2.688,
+          "season "
+        ],
+        [
+          3.05,
+          "positions, "
+        ],
+        [
+          4.0,
+          "but "
+        ],
+        [
+          4.15,
+          "it "
+        ],
+        [
+          4.287,
+          "is "
+        ],
+        [
+          4.463,
+          "an "
+        ],
+        [
+          4.55,
+          "approximation. "
+        ],
+        [
+          6.025,
+          "Its "
+        ],
+        [
+          6.275,
+          "bar "
+        ],
+        [
+          6.55,
+          "heights "
+        ],
+        [
+          6.875,
+          "are "
+        ],
+        [
+          7.037,
+          "densities, "
+        ],
+        [
+          7.975,
+          "not "
+        ],
+        [
+          8.225,
+          "individual "
+        ],
+        [
+          8.775,
+          "game "
+        ],
+        [
+          9.075,
+          "probabilities."
+        ]
+      ]
     },
     {
       "file": "episode-02-cue-12.mp3",
       "text": "In Python, normalized value counts build the PMF. A cumulative sum builds the CDF. Let us replace the imaginary marks with real data.",
       "seconds": 10.45,
-      "slot_seconds": 10
+      "slot_seconds": 10,
+      "words": [
+        [
+          0.275,
+          "In "
+        ],
+        [
+          0.4,
+          "Python, "
+        ],
+        [
+          1.212,
+          "normalized "
+        ],
+        [
+          1.85,
+          "value "
+        ],
+        [
+          2.25,
+          "counts "
+        ],
+        [
+          2.688,
+          "build "
+        ],
+        [
+          2.938,
+          "the "
+        ],
+        [
+          3.025,
+          "PMF. "
+        ],
+        [
+          4.213,
+          "A "
+        ],
+        [
+          4.338,
+          "cumulative "
+        ],
+        [
+          4.963,
+          "sum "
+        ],
+        [
+          5.425,
+          "builds "
+        ],
+        [
+          5.8,
+          "the "
+        ],
+        [
+          5.938,
+          "CDF. "
+        ],
+        [
+          7.088,
+          "Let "
+        ],
+        [
+          7.263,
+          "us "
+        ],
+        [
+          7.45,
+          "replace "
+        ],
+        [
+          7.9,
+          "the "
+        ],
+        [
+          8.025,
+          "imaginary "
+        ],
+        [
+          8.65,
+          "marks "
+        ],
+        [
+          9.075,
+          "with "
+        ],
+        [
+          9.262,
+          "real "
+        ],
+        [
+          9.55,
+          "data."
+        ]
+      ]
     },
     {
       "file": "episode-02-cue-13.mp3",
       "text": "We import pandas, NumPy, and Matplotlib. Our cached NBA responses keep the recording reproducible, so we do not wait for downloads on camera.",
       "seconds": 10.18,
-      "slot_seconds": 10
+      "slot_seconds": 10,
+      "words": [
+        [
+          0.25,
+          "We "
+        ],
+        [
+          0.4,
+          "import "
+        ],
+        [
+          0.825,
+          "pandas, "
+        ],
+        [
+          1.663,
+          "NumPy, "
+        ],
+        [
+          2.425,
+          "and "
+        ],
+        [
+          2.55,
+          "Matplotlib. "
+        ],
+        [
+          3.7,
+          "Our "
+        ],
+        [
+          3.888,
+          "cached "
+        ],
+        [
+          4.388,
+          "NBA "
+        ],
+        [
+          4.95,
+          "responses "
+        ],
+        [
+          5.65,
+          "keep "
+        ],
+        [
+          5.862,
+          "the "
+        ],
+        [
+          5.95,
+          "recording "
+        ],
+        [
+          6.475,
+          "reproducible, "
+        ],
+        [
+          7.55,
+          "so "
+        ],
+        [
+          7.725,
+          "we "
+        ],
+        [
+          7.812,
+          "do "
+        ],
+        [
+          7.912,
+          "not "
+        ],
+        [
+          8.1,
+          "wait "
+        ],
+        [
+          8.35,
+          "for "
+        ],
+        [
+          8.475,
+          "downloads "
+        ],
+        [
+          8.988,
+          "on "
+        ],
+        [
+          9.175,
+          "camera."
+        ]
+      ]
     },
     {
       "file": "episode-02-cue-14.mp3",
       "text": "The download script uses the third-party nba_api wrapper to request official NBA player and team game logs, limited to regular-season games.",
       "seconds": 10.55,
-      "slot_seconds": 10
+      "slot_seconds": 10,
+      "words": [
+        [
+          0.25,
+          "The "
+        ],
+        [
+          0.362,
+          "download "
+        ],
+        [
+          0.9,
+          "script "
+        ],
+        [
+          1.387,
+          "uses "
+        ],
+        [
+          1.825,
+          "the "
+        ],
+        [
+          1.975,
+          "third-party "
+        ],
+        [
+          2.688,
+          "nba_api "
+        ],
+        [
+          3.95,
+          "wrapper "
+        ],
+        [
+          4.675,
+          "to "
+        ],
+        [
+          4.825,
+          "request "
+        ],
+        [
+          5.275,
+          "official "
+        ],
+        [
+          5.75,
+          "NBA "
+        ],
+        [
+          6.3,
+          "player "
+        ],
+        [
+          6.787,
+          "and "
+        ],
+        [
+          6.938,
+          "team "
+        ],
+        [
+          7.25,
+          "game "
+        ],
+        [
+          7.5,
+          "logs, "
+        ],
+        [
+          8.312,
+          "limited "
+        ],
+        [
+          8.725,
+          "to "
+        ],
+        [
+          8.85,
+          "regular-season "
+        ],
+        [
+          9.575,
+          "games."
+        ]
+      ]
     },
     {
       "file": "episode-02-cue-15.mp3",
       "text": "We parse dates and sort chronologically. Then we number every team game. Missing a game does not pause the team's season counter.",
       "seconds": 8.4,
-      "slot_seconds": 10
+      "slot_seconds": 10,
+      "words": [
+        [
+          0.25,
+          "We "
+        ],
+        [
+          0.375,
+          "parse "
+        ],
+        [
+          0.725,
+          "dates "
+        ],
+        [
+          1.175,
+          "and "
+        ],
+        [
+          1.337,
+          "sort "
+        ],
+        [
+          1.65,
+          "chronologically. "
+        ],
+        [
+          2.888,
+          "Then "
+        ],
+        [
+          3.125,
+          "we "
+        ],
+        [
+          3.275,
+          "number "
+        ],
+        [
+          3.612,
+          "every "
+        ],
+        [
+          3.962,
+          "team "
+        ],
+        [
+          4.275,
+          "game. "
+        ],
+        [
+          5.037,
+          "Missing "
+        ],
+        [
+          5.338,
+          "a "
+        ],
+        [
+          5.4,
+          "game "
+        ],
+        [
+          5.725,
+          "does "
+        ],
+        [
+          5.9,
+          "not "
+        ],
+        [
+          6.125,
+          "pause "
+        ],
+        [
+          6.475,
+          "the "
+        ],
+        [
+          6.588,
+          "team's "
+        ],
+        [
+          7.025,
+          "season "
+        ],
+        [
+          7.425,
+          "counter."
+        ]
+      ]
     },
     {
       "file": "episode-02-cue-16.mp3",
       "text": "Next, merge LeBron's appearances with his team's schedule using game IDs. A one-to-one validation rejects duplicate matches, and unmatched games raise an error.",
       "seconds": 11.18,
-      "slot_seconds": 10
+      "slot_seconds": 10,
+      "words": [
+        [
+          0.325,
+          "Next, "
+        ],
+        [
+          0.887,
+          "merge "
+        ],
+        [
+          1.188,
+          "LeBron's "
+        ],
+        [
+          1.7,
+          "appearances "
+        ],
+        [
+          2.375,
+          "with "
+        ],
+        [
+          2.513,
+          "his "
+        ],
+        [
+          2.688,
+          "team's "
+        ],
+        [
+          3.062,
+          "schedule "
+        ],
+        [
+          3.575,
+          "using "
+        ],
+        [
+          3.925,
+          "game "
+        ],
+        [
+          4.25,
+          "IDs. "
+        ],
+        [
+          5.362,
+          "A "
+        ],
+        [
+          5.487,
+          "one-to-one "
+        ],
+        [
+          6.025,
+          "validation "
+        ],
+        [
+          6.75,
+          "rejects "
+        ],
+        [
+          7.237,
+          "duplicate "
+        ],
+        [
+          7.7,
+          "matches, "
+        ],
+        [
+          8.625,
+          "and "
+        ],
+        [
+          8.787,
+          "unmatched "
+        ],
+        [
+          9.4,
+          "games "
+        ],
+        [
+          9.863,
+          "raise "
+        ],
+        [
+          10.188,
+          "an "
+        ],
+        [
+          10.275,
+          "error."
+        ]
+      ]
     },
     {
       "file": "episode-02-cue-17.mp3",
       "text": "For each season, compute the maximum points. Filter to games with that score, then select the earliest. This resolves ties explicitly.",
       "seconds": 9.0,
-      "slot_seconds": 10
+      "slot_seconds": 10,
+      "words": [
+        [
+          0.25,
+          "For "
+        ],
+        [
+          0.375,
+          "each "
+        ],
+        [
+          0.6,
+          "season, "
+        ],
+        [
+          1.15,
+          "compute "
+        ],
+        [
+          1.512,
+          "the "
+        ],
+        [
+          1.6,
+          "maximum "
+        ],
+        [
+          2.1,
+          "points. "
+        ],
+        [
+          3.038,
+          "Filter "
+        ],
+        [
+          3.375,
+          "to "
+        ],
+        [
+          3.5,
+          "games "
+        ],
+        [
+          3.888,
+          "with "
+        ],
+        [
+          4.0,
+          "that "
+        ],
+        [
+          4.25,
+          "score, "
+        ],
+        [
+          4.8,
+          "then "
+        ],
+        [
+          5.037,
+          "select "
+        ],
+        [
+          5.438,
+          "the "
+        ],
+        [
+          5.55,
+          "earliest. "
+        ],
+        [
+          6.612,
+          "This "
+        ],
+        [
+          6.825,
+          "resolves "
+        ],
+        [
+          7.388,
+          "ties "
+        ],
+        [
+          7.75,
+          "explicitly."
+        ]
+      ]
     },
     {
       "file": "episode-02-cue-18.mp3",
       "text": "Keep the team's game number and LeBron's appearance number separately. The first is our target. The second helps check the meaning of each row.",
       "seconds": 9.15,
-      "slot_seconds": 10
+      "slot_seconds": 10,
+      "words": [
+        [
+          0.25,
+          "Keep "
+        ],
+        [
+          0.475,
+          "the "
+        ],
+        [
+          0.588,
+          "team's "
+        ],
+        [
+          1.025,
+          "game "
+        ],
+        [
+          1.325,
+          "number "
+        ],
+        [
+          1.762,
+          "and "
+        ],
+        [
+          1.887,
+          "LeBron's "
+        ],
+        [
+          2.425,
+          "appearance "
+        ],
+        [
+          2.95,
+          "number "
+        ],
+        [
+          3.263,
+          "separately. "
+        ],
+        [
+          4.3,
+          "The "
+        ],
+        [
+          4.438,
+          "first "
+        ],
+        [
+          4.888,
+          "is "
+        ],
+        [
+          5.013,
+          "our "
+        ],
+        [
+          5.15,
+          "target. "
+        ],
+        [
+          6.075,
+          "The "
+        ],
+        [
+          6.213,
+          "second "
+        ],
+        [
+          6.75,
+          "helps "
+        ],
+        [
+          7.112,
+          "check "
+        ],
+        [
+          7.375,
+          "the "
+        ],
+        [
+          7.5,
+          "meaning "
+        ],
+        [
+          7.85,
+          "of "
+        ],
+        [
+          8.0,
+          "each "
+        ],
+        [
+          8.275,
+          "row."
+        ]
+      ]
     },
     {
       "file": "episode-02-cue-19.mp3",
       "text": "Age is measured on his first appearance that season. We also record debut field goals made, debut total points, and season-high points.",
       "seconds": 8.9,
-      "slot_seconds": 10
+      "slot_seconds": 10,
+      "words": [
+        [
+          0.325,
+          "Age "
+        ],
+        [
+          0.65,
+          "is "
+        ],
+        [
+          0.812,
+          "measured "
+        ],
+        [
+          1.262,
+          "on "
+        ],
+        [
+          1.363,
+          "his "
+        ],
+        [
+          1.55,
+          "first "
+        ],
+        [
+          1.837,
+          "appearance "
+        ],
+        [
+          2.3,
+          "that "
+        ],
+        [
+          2.55,
+          "season. "
+        ],
+        [
+          3.5,
+          "We "
+        ],
+        [
+          3.625,
+          "also "
+        ],
+        [
+          3.975,
+          "record "
+        ],
+        [
+          4.375,
+          "debut "
+        ],
+        [
+          4.737,
+          "field "
+        ],
+        [
+          5.025,
+          "goals "
+        ],
+        [
+          5.325,
+          "made, "
+        ],
+        [
+          5.975,
+          "debut "
+        ],
+        [
+          6.325,
+          "total "
+        ],
+        [
+          6.675,
+          "points, "
+        ],
+        [
+          7.3,
+          "and "
+        ],
+        [
+          7.463,
+          "season-high "
+        ],
+        [
+          7.975,
+          "points."
+        ]
+      ]
     },
     {
       "file": "episode-02-cue-20.mp3",
       "text": "These are different quantities. The correlation uses debut FGM. The regression uses debut points. Season-high points help define the target, but never enter the predictors.",
       "seconds": 11.88,
-      "slot_seconds": 10
+      "slot_seconds": 10,
+      "words": [
+        [
+          0.3,
+          "These "
+        ],
+        [
+          0.575,
+          "are "
+        ],
+        [
+          0.7,
+          "different "
+        ],
+        [
+          0.988,
+          "quantities. "
+        ],
+        [
+          2.075,
+          "The "
+        ],
+        [
+          2.175,
+          "correlation "
+        ],
+        [
+          2.85,
+          "uses "
+        ],
+        [
+          3.263,
+          "debut "
+        ],
+        [
+          3.812,
+          "FGM. "
+        ],
+        [
+          4.925,
+          "The "
+        ],
+        [
+          5.025,
+          "regression "
+        ],
+        [
+          5.575,
+          "uses "
+        ],
+        [
+          5.975,
+          "debut "
+        ],
+        [
+          6.375,
+          "points. "
+        ],
+        [
+          7.362,
+          "Season-high "
+        ],
+        [
+          7.938,
+          "points "
+        ],
+        [
+          8.375,
+          "help "
+        ],
+        [
+          8.625,
+          "define "
+        ],
+        [
+          9.012,
+          "the "
+        ],
+        [
+          9.1,
+          "target, "
+        ],
+        [
+          9.8,
+          "but "
+        ],
+        [
+          10.0,
+          "never "
+        ],
+        [
+          10.387,
+          "enter "
+        ],
+        [
+          10.637,
+          "the "
+        ],
+        [
+          10.725,
+          "predictors."
+        ]
+      ]
     },
     {
       "file": "episode-02-cue-21.mp3",
       "text": "The dataset has twenty-three seasons, beginning in two thousand three. We reconcile every player's game count, points, and FGM against NBA season totals.",
       "seconds": 10.72,
-      "slot_seconds": 10
+      "slot_seconds": 10,
+      "words": [
+        [
+          0.25,
+          "The "
+        ],
+        [
+          0.325,
+          "dataset "
+        ],
+        [
+          0.825,
+          "has "
+        ],
+        [
+          1.025,
+          "twenty-three "
+        ],
+        [
+          1.525,
+          "seasons, "
+        ],
+        [
+          2.3,
+          "beginning "
+        ],
+        [
+          2.75,
+          "in "
+        ],
+        [
+          2.85,
+          "two "
+        ],
+        [
+          3.025,
+          "thousand "
+        ],
+        [
+          3.425,
+          "three. "
+        ],
+        [
+          4.3,
+          "We "
+        ],
+        [
+          4.45,
+          "reconcile "
+        ],
+        [
+          5.013,
+          "every "
+        ],
+        [
+          5.325,
+          "player's "
+        ],
+        [
+          5.725,
+          "game "
+        ],
+        [
+          6.025,
+          "count, "
+        ],
+        [
+          6.638,
+          "points, "
+        ],
+        [
+          7.325,
+          "and "
+        ],
+        [
+          7.487,
+          "FGM "
+        ],
+        [
+          8.262,
+          "against "
+        ],
+        [
+          8.662,
+          "NBA "
+        ],
+        [
+          9.338,
+          "season "
+        ],
+        [
+          9.7,
+          "totals."
+        ]
+      ]
     },
     {
       "file": "episode-02-cue-22.mp3",
       "text": "Only twenty seasons contain eighty-two team games. Three contain sixty-six, seventy-one, and seventy-two games, so we preserve their actual schedule lengths.",
       "seconds": 10.65,
-      "slot_seconds": 10
+      "slot_seconds": 10,
+      "words": [
+        [
+          0.275,
+          "Only "
+        ],
+        [
+          0.55,
+          "twenty "
+        ],
+        [
+          0.875,
+          "seasons "
+        ],
+        [
+          1.4,
+          "contain "
+        ],
+        [
+          1.913,
+          "eighty-two "
+        ],
+        [
+          2.425,
+          "team "
+        ],
+        [
+          2.725,
+          "games. "
+        ],
+        [
+          3.675,
+          "Three "
+        ],
+        [
+          4.025,
+          "contain "
+        ],
+        [
+          4.475,
+          "sixty-six, "
+        ],
+        [
+          5.537,
+          "seventy-one, "
+        ],
+        [
+          6.35,
+          "and "
+        ],
+        [
+          6.487,
+          "seventy-two "
+        ],
+        [
+          7.075,
+          "games, "
+        ],
+        [
+          7.85,
+          "so "
+        ],
+        [
+          8.025,
+          "we "
+        ],
+        [
+          8.175,
+          "preserve "
+        ],
+        [
+          8.65,
+          "their "
+        ],
+        [
+          8.838,
+          "actual "
+        ],
+        [
+          9.3,
+          "schedule "
+        ],
+        [
+          9.75,
+          "lengths."
+        ]
+      ]
     },
     {
       "file": "episode-02-cue-23.mp3",
       "text": "Our main analysis uses actual game numbers across all seasons. We also compare only full schedules and a separately labeled eighty-two-game equivalent.",
       "seconds": 10.0,
-      "slot_seconds": 10
+      "slot_seconds": 10,
+      "words": [
+        [
+          0.25,
+          "Our "
+        ],
+        [
+          0.4,
+          "main "
+        ],
+        [
+          0.7,
+          "analysis "
+        ],
+        [
+          1.488,
+          "uses "
+        ],
+        [
+          1.85,
+          "actual "
+        ],
+        [
+          2.3,
+          "game "
+        ],
+        [
+          2.538,
+          "numbers "
+        ],
+        [
+          2.95,
+          "across "
+        ],
+        [
+          3.325,
+          "all "
+        ],
+        [
+          3.575,
+          "seasons. "
+        ],
+        [
+          4.65,
+          "We "
+        ],
+        [
+          4.775,
+          "also "
+        ],
+        [
+          5.125,
+          "compare "
+        ],
+        [
+          5.537,
+          "only "
+        ],
+        [
+          5.888,
+          "full "
+        ],
+        [
+          6.125,
+          "schedules "
+        ],
+        [
+          6.95,
+          "and "
+        ],
+        [
+          7.088,
+          "a "
+        ],
+        [
+          7.2,
+          "separately "
+        ],
+        [
+          7.737,
+          "labeled "
+        ],
+        [
+          8.213,
+          "eighty-two-game "
+        ],
+        [
+          8.925,
+          "equivalent."
+        ]
+      ]
     },
     {
       "file": "episode-02-cue-24.mp3",
       "text": "Now select the target column. Each row contributes one first-maximum position, regardless of how many games LeBron played during that season.",
       "seconds": 9.75,
-      "slot_seconds": 10
+      "slot_seconds": 10,
+      "words": [
+        [
+          0.3,
+          "Now "
+        ],
+        [
+          0.562,
+          "select "
+        ],
+        [
+          0.938,
+          "the "
+        ],
+        [
+          1.025,
+          "target "
+        ],
+        [
+          1.4,
+          "column. "
+        ],
+        [
+          2.362,
+          "Each "
+        ],
+        [
+          2.688,
+          "row "
+        ],
+        [
+          3.075,
+          "contributes "
+        ],
+        [
+          3.675,
+          "one "
+        ],
+        [
+          4.05,
+          "first-maximum "
+        ],
+        [
+          4.925,
+          "position, "
+        ],
+        [
+          5.825,
+          "regardless "
+        ],
+        [
+          6.45,
+          "of "
+        ],
+        [
+          6.55,
+          "how "
+        ],
+        [
+          6.75,
+          "many "
+        ],
+        [
+          6.975,
+          "games "
+        ],
+        [
+          7.35,
+          "LeBron "
+        ],
+        [
+          7.812,
+          "played "
+        ],
+        [
+          8.275,
+          "during "
+        ],
+        [
+          8.525,
+          "that "
+        ],
+        [
+          8.775,
+          "season."
+        ]
+      ]
     },
     {
       "file": "episode-02-cue-25.mp3",
       "text": "Value counts with normalize set to true gives relative frequencies. Reindex from one through eighty-two to include game numbers that never occurred.",
       "seconds": 9.6,
-      "slot_seconds": 10
+      "slot_seconds": 10,
+      "words": [
+        [
+          0.3,
+          "Value "
+        ],
+        [
+          0.688,
+          "counts "
+        ],
+        [
+          1.087,
+          "with "
+        ],
+        [
+          1.25,
+          "normalize "
+        ],
+        [
+          1.825,
+          "set "
+        ],
+        [
+          2.0,
+          "to "
+        ],
+        [
+          2.138,
+          "true "
+        ],
+        [
+          2.763,
+          "gives "
+        ],
+        [
+          3.087,
+          "relative "
+        ],
+        [
+          3.55,
+          "frequencies. "
+        ],
+        [
+          4.838,
+          "Reindex "
+        ],
+        [
+          5.4,
+          "from "
+        ],
+        [
+          5.6,
+          "one "
+        ],
+        [
+          5.838,
+          "through "
+        ],
+        [
+          6.05,
+          "eighty-two "
+        ],
+        [
+          6.875,
+          "to "
+        ],
+        [
+          7.05,
+          "include "
+        ],
+        [
+          7.45,
+          "game "
+        ],
+        [
+          7.75,
+          "numbers "
+        ],
+        [
+          8.15,
+          "that "
+        ],
+        [
+          8.363,
+          "never "
+        ],
+        [
+          8.65,
+          "occurred."
+        ]
+      ]
     },
     {
       "file": "episode-02-cue-26.mp3",
       "text": "Apply cumulative sum to get the empirical CDF. By team game forty-one, 43.5 percent of these historical season highs had first occurred.",
       "seconds": 10.65,
-      "slot_seconds": 10
+      "slot_seconds": 10,
+      "words": [
+        [
+          0.275,
+          "Apply "
+        ],
+        [
+          0.675,
+          "cumulative "
+        ],
+        [
+          1.337,
+          "sum "
+        ],
+        [
+          1.788,
+          "to "
+        ],
+        [
+          1.9,
+          "get "
+        ],
+        [
+          2.062,
+          "the "
+        ],
+        [
+          2.175,
+          "empirical "
+        ],
+        [
+          2.763,
+          "CDF. "
+        ],
+        [
+          3.962,
+          "By "
+        ],
+        [
+          4.188,
+          "team "
+        ],
+        [
+          4.525,
+          "game "
+        ],
+        [
+          4.787,
+          "forty-one, "
+        ],
+        [
+          5.737,
+          "43.5 "
+        ],
+        [
+          7.0,
+          "percent "
+        ],
+        [
+          7.475,
+          "of "
+        ],
+        [
+          7.575,
+          "these "
+        ],
+        [
+          7.8,
+          "historical "
+        ],
+        [
+          8.387,
+          "season "
+        ],
+        [
+          8.775,
+          "highs "
+        ],
+        [
+          9.3,
+          "had "
+        ],
+        [
+          9.475,
+          "first "
+        ],
+        [
+          9.713,
+          "occurred."
+        ]
+      ]
     },
     {
       "file": "episode-02-cue-27.mp3",
       "text": "That is a descriptive frequency, not a guaranteed probability for next season. A zero-frequency game number is also possible in future data.",
       "seconds": 9.78,
-      "slot_seconds": 10
+      "slot_seconds": 10,
+      "words": [
+        [
+          0.275,
+          "That "
+        ],
+        [
+          0.562,
+          "is "
+        ],
+        [
+          0.75,
+          "a "
+        ],
+        [
+          0.85,
+          "descriptive "
+        ],
+        [
+          1.45,
+          "frequency, "
+        ],
+        [
+          2.4,
+          "not "
+        ],
+        [
+          2.587,
+          "a "
+        ],
+        [
+          2.688,
+          "guaranteed "
+        ],
+        [
+          3.325,
+          "probability "
+        ],
+        [
+          4.025,
+          "for "
+        ],
+        [
+          4.15,
+          "next "
+        ],
+        [
+          4.425,
+          "season. "
+        ],
+        [
+          5.438,
+          "A "
+        ],
+        [
+          5.562,
+          "zero-frequency "
+        ],
+        [
+          6.45,
+          "game "
+        ],
+        [
+          6.725,
+          "number "
+        ],
+        [
+          7.138,
+          "is "
+        ],
+        [
+          7.3,
+          "also "
+        ],
+        [
+          7.65,
+          "possible "
+        ],
+        [
+          8.312,
+          "in "
+        ],
+        [
+          8.475,
+          "future "
+        ],
+        [
+          8.875,
+          "data."
+        ]
+      ]
     },
     {
       "file": "episode-02-cue-28.mp3",
       "text": "Next, calculate Pearson correlation. Age and debut FGM have a correlation of minus zero point zero eight five, showing little linear association in this sample.",
       "seconds": 11.78,
-      "slot_seconds": 10
+      "slot_seconds": 10,
+      "words": [
+        [
+          0.325,
+          "Next, "
+        ],
+        [
+          0.85,
+          "calculate "
+        ],
+        [
+          1.4,
+          "Pearson "
+        ],
+        [
+          1.85,
+          "correlation. "
+        ],
+        [
+          3.2,
+          "Age "
+        ],
+        [
+          3.65,
+          "and "
+        ],
+        [
+          3.775,
+          "debut "
+        ],
+        [
+          4.237,
+          "FGM "
+        ],
+        [
+          5.088,
+          "have "
+        ],
+        [
+          5.263,
+          "a "
+        ],
+        [
+          5.325,
+          "correlation "
+        ],
+        [
+          6.0,
+          "of "
+        ],
+        [
+          6.138,
+          "minus "
+        ],
+        [
+          6.562,
+          "zero "
+        ],
+        [
+          6.987,
+          "point "
+        ],
+        [
+          7.275,
+          "zero "
+        ],
+        [
+          7.625,
+          "eight "
+        ],
+        [
+          7.862,
+          "five, "
+        ],
+        [
+          8.688,
+          "showing "
+        ],
+        [
+          9.05,
+          "little "
+        ],
+        [
+          9.338,
+          "linear "
+        ],
+        [
+          9.75,
+          "association "
+        ],
+        [
+          10.575,
+          "in "
+        ],
+        [
+          10.662,
+          "this "
+        ],
+        [
+          10.8,
+          "sample."
+        ]
+      ]
     },
     {
       "file": "episode-02-cue-29.mp3",
       "text": "Age and season-high points have a correlation of minus zero point two five eight. The association is negative, but it does not establish a causal effect of aging.",
       "seconds": 10.85,
-      "slot_seconds": 10
+      "slot_seconds": 10,
+      "words": [
+        [
+          0.325,
+          "Age "
+        ],
+        [
+          0.738,
+          "and "
+        ],
+        [
+          0.912,
+          "season-high "
+        ],
+        [
+          1.45,
+          "points "
+        ],
+        [
+          2.062,
+          "have "
+        ],
+        [
+          2.237,
+          "a "
+        ],
+        [
+          2.3,
+          "correlation "
+        ],
+        [
+          3.0,
+          "of "
+        ],
+        [
+          3.138,
+          "minus "
+        ],
+        [
+          3.6,
+          "zero "
+        ],
+        [
+          4.037,
+          "point "
+        ],
+        [
+          4.362,
+          "two "
+        ],
+        [
+          4.612,
+          "five "
+        ],
+        [
+          4.925,
+          "eight. "
+        ],
+        [
+          5.725,
+          "The "
+        ],
+        [
+          5.875,
+          "association "
+        ],
+        [
+          6.675,
+          "is "
+        ],
+        [
+          6.825,
+          "negative, "
+        ],
+        [
+          7.675,
+          "but "
+        ],
+        [
+          7.812,
+          "it "
+        ],
+        [
+          7.888,
+          "does "
+        ],
+        [
+          8.075,
+          "not "
+        ],
+        [
+          8.287,
+          "establish "
+        ],
+        [
+          8.875,
+          "a "
+        ],
+        [
+          8.988,
+          "causal "
+        ],
+        [
+          9.45,
+          "effect "
+        ],
+        [
+          9.838,
+          "of "
+        ],
+        [
+          9.925,
+          "aging."
+        ]
+      ]
     },
     {
       "file": "episode-02-cue-30.mp3",
       "text": "These observations come from one career. Age also tracks changes in teams, playing time, injuries, and role. The notebook includes rank correlation as a check.",
       "seconds": 11.12,
-      "slot_seconds": 10
+      "slot_seconds": 10,
+      "words": [
+        [
+          0.275,
+          "These "
+        ],
+        [
+          0.475,
+          "observations "
+        ],
+        [
+          1.3,
+          "come "
+        ],
+        [
+          1.525,
+          "from "
+        ],
+        [
+          1.725,
+          "one "
+        ],
+        [
+          1.95,
+          "career. "
+        ],
+        [
+          2.938,
+          "Age "
+        ],
+        [
+          3.237,
+          "also "
+        ],
+        [
+          3.5,
+          "tracks "
+        ],
+        [
+          3.862,
+          "changes "
+        ],
+        [
+          4.35,
+          "in "
+        ],
+        [
+          4.5,
+          "teams, "
+        ],
+        [
+          5.263,
+          "playing "
+        ],
+        [
+          5.662,
+          "time, "
+        ],
+        [
+          6.35,
+          "injuries, "
+        ],
+        [
+          6.925,
+          "and "
+        ],
+        [
+          7.05,
+          "role. "
+        ],
+        [
+          7.987,
+          "The "
+        ],
+        [
+          8.1,
+          "notebook "
+        ],
+        [
+          8.525,
+          "includes "
+        ],
+        [
+          8.988,
+          "rank "
+        ],
+        [
+          9.325,
+          "correlation "
+        ],
+        [
+          10.088,
+          "as "
+        ],
+        [
+          10.213,
+          "a "
+        ],
+        [
+          10.287,
+          "check."
+        ]
+      ]
     },
     {
       "file": "episode-02-cue-31.mp3",
       "text": "Now build the regression matrix: one column for the intercept, one for age, and one for debut points. Our response is the first-maximum game number.",
       "seconds": 9.93,
-      "slot_seconds": 10
+      "slot_seconds": 10,
+      "words": [
+        [
+          0.3,
+          "Now "
+        ],
+        [
+          0.562,
+          "build "
+        ],
+        [
+          0.812,
+          "the "
+        ],
+        [
+          0.9,
+          "regression "
+        ],
+        [
+          1.425,
+          "matrix: "
+        ],
+        [
+          2.337,
+          "one "
+        ],
+        [
+          2.575,
+          "column "
+        ],
+        [
+          2.925,
+          "for "
+        ],
+        [
+          3.038,
+          "the "
+        ],
+        [
+          3.15,
+          "intercept, "
+        ],
+        [
+          4.0,
+          "one "
+        ],
+        [
+          4.225,
+          "for "
+        ],
+        [
+          4.388,
+          "age, "
+        ],
+        [
+          5.013,
+          "and "
+        ],
+        [
+          5.188,
+          "one "
+        ],
+        [
+          5.475,
+          "for "
+        ],
+        [
+          5.6,
+          "debut "
+        ],
+        [
+          6.025,
+          "points. "
+        ],
+        [
+          7.0,
+          "Our "
+        ],
+        [
+          7.175,
+          "response "
+        ],
+        [
+          7.825,
+          "is "
+        ],
+        [
+          7.963,
+          "the "
+        ],
+        [
+          8.088,
+          "first-maximum "
+        ],
+        [
+          8.875,
+          "game "
+        ],
+        [
+          9.088,
+          "number."
+        ]
+      ]
     },
     {
       "file": "episode-02-cue-32.mp3",
       "text": "NumPy's least-squares function estimates three coefficients. The fitted equation starts at seventy-five point seven three, subtracting one point zero one eight times age and zero point one five four times debut points.",
       "seconds": 14.72,
-      "slot_seconds": 10
+      "slot_seconds": 10,
+      "words": [
+        [
+          0.325,
+          "NumPy's "
+        ],
+        [
+          0.975,
+          "least-squares "
+        ],
+        [
+          1.6,
+          "function "
+        ],
+        [
+          2.212,
+          "estimates "
+        ],
+        [
+          2.837,
+          "three "
+        ],
+        [
+          3.175,
+          "coefficients. "
+        ],
+        [
+          4.487,
+          "The "
+        ],
+        [
+          4.638,
+          "fitted "
+        ],
+        [
+          4.925,
+          "equation "
+        ],
+        [
+          5.45,
+          "starts "
+        ],
+        [
+          5.8,
+          "at "
+        ],
+        [
+          5.963,
+          "seventy-five "
+        ],
+        [
+          6.725,
+          "point "
+        ],
+        [
+          6.975,
+          "seven "
+        ],
+        [
+          7.338,
+          "three, "
+        ],
+        [
+          8.088,
+          "subtracting "
+        ],
+        [
+          8.738,
+          "one "
+        ],
+        [
+          8.975,
+          "point "
+        ],
+        [
+          9.262,
+          "zero "
+        ],
+        [
+          9.688,
+          "one "
+        ],
+        [
+          9.9,
+          "eight "
+        ],
+        [
+          10.1,
+          "times "
+        ],
+        [
+          10.45,
+          "age "
+        ],
+        [
+          11.162,
+          "and "
+        ],
+        [
+          11.338,
+          "zero "
+        ],
+        [
+          11.762,
+          "point "
+        ],
+        [
+          12.05,
+          "one "
+        ],
+        [
+          12.287,
+          "five "
+        ],
+        [
+          12.662,
+          "four "
+        ],
+        [
+          12.963,
+          "times "
+        ],
+        [
+          13.45,
+          "debut "
+        ],
+        [
+          13.775,
+          "points."
+        ]
+      ]
     },
     {
       "file": "episode-02-cue-33.mp3",
       "text": "Each slope describes a conditional linear association while holding the other predictor fixed. We can use both inputs only after his season debut is complete.",
       "seconds": 10.15,
-      "slot_seconds": 10
+      "slot_seconds": 10,
+      "words": [
+        [
+          0.275,
+          "Each "
+        ],
+        [
+          0.512,
+          "slope "
+        ],
+        [
+          0.875,
+          "describes "
+        ],
+        [
+          1.475,
+          "a "
+        ],
+        [
+          1.55,
+          "conditional "
+        ],
+        [
+          2.175,
+          "linear "
+        ],
+        [
+          2.575,
+          "association "
+        ],
+        [
+          3.712,
+          "while "
+        ],
+        [
+          3.9,
+          "holding "
+        ],
+        [
+          4.237,
+          "the "
+        ],
+        [
+          4.362,
+          "other "
+        ],
+        [
+          4.65,
+          "predictor "
+        ],
+        [
+          5.138,
+          "fixed. "
+        ],
+        [
+          6.075,
+          "We "
+        ],
+        [
+          6.2,
+          "can "
+        ],
+        [
+          6.325,
+          "use "
+        ],
+        [
+          6.588,
+          "both "
+        ],
+        [
+          6.875,
+          "inputs "
+        ],
+        [
+          7.4,
+          "only "
+        ],
+        [
+          7.75,
+          "after "
+        ],
+        [
+          8.037,
+          "his "
+        ],
+        [
+          8.175,
+          "season "
+        ],
+        [
+          8.5,
+          "debut "
+        ],
+        [
+          8.975,
+          "is "
+        ],
+        [
+          9.125,
+          "complete."
+        ]
+      ]
     },
     {
       "file": "episode-02-cue-34.mp3",
       "text": "To evaluate prediction, train on the first ten seasons and predict the next. Expand the training window, then repeat for every later season.",
       "seconds": 9.1,
-      "slot_seconds": 10
+      "slot_seconds": 10,
+      "words": [
+        [
+          0.275,
+          "To "
+        ],
+        [
+          0.4,
+          "evaluate "
+        ],
+        [
+          0.975,
+          "prediction, "
+        ],
+        [
+          1.788,
+          "train "
+        ],
+        [
+          2.087,
+          "on "
+        ],
+        [
+          2.188,
+          "the "
+        ],
+        [
+          2.288,
+          "first "
+        ],
+        [
+          2.625,
+          "ten "
+        ],
+        [
+          2.875,
+          "seasons "
+        ],
+        [
+          3.462,
+          "and "
+        ],
+        [
+          3.6,
+          "predict "
+        ],
+        [
+          3.962,
+          "the "
+        ],
+        [
+          4.05,
+          "next. "
+        ],
+        [
+          5.037,
+          "Expand "
+        ],
+        [
+          5.537,
+          "the "
+        ],
+        [
+          5.625,
+          "training "
+        ],
+        [
+          6.0,
+          "window, "
+        ],
+        [
+          6.7,
+          "then "
+        ],
+        [
+          6.9,
+          "repeat "
+        ],
+        [
+          7.325,
+          "for "
+        ],
+        [
+          7.487,
+          "every "
+        ],
+        [
+          7.825,
+          "later "
+        ],
+        [
+          8.125,
+          "season."
+        ]
+      ]
     },
     {
       "file": "episode-02-cue-35.mp3",
       "text": "Each prediction uses only earlier seasons for training. Compare it with the average target from those same earlier seasons, our simple baseline.",
       "seconds": 9.53,
-      "slot_seconds": 10
+      "slot_seconds": 10,
+      "words": [
+        [
+          0.3,
+          "Each "
+        ],
+        [
+          0.525,
+          "prediction "
+        ],
+        [
+          1.113,
+          "uses "
+        ],
+        [
+          1.562,
+          "only "
+        ],
+        [
+          1.962,
+          "earlier "
+        ],
+        [
+          2.438,
+          "seasons "
+        ],
+        [
+          2.975,
+          "for "
+        ],
+        [
+          3.1,
+          "training. "
+        ],
+        [
+          4.062,
+          "Compare "
+        ],
+        [
+          4.55,
+          "it "
+        ],
+        [
+          4.662,
+          "with "
+        ],
+        [
+          4.787,
+          "the "
+        ],
+        [
+          4.912,
+          "average "
+        ],
+        [
+          5.325,
+          "target "
+        ],
+        [
+          5.775,
+          "from "
+        ],
+        [
+          5.95,
+          "those "
+        ],
+        [
+          6.213,
+          "same "
+        ],
+        [
+          6.55,
+          "earlier "
+        ],
+        [
+          6.95,
+          "seasons, "
+        ],
+        [
+          7.85,
+          "our "
+        ],
+        [
+          8.062,
+          "simple "
+        ],
+        [
+          8.425,
+          "baseline."
+        ]
+      ]
     },
     {
       "file": "episode-02-cue-36.mp3",
       "text": "Across thirteen held-out seasons, regression has a mean absolute error of eighteen point four three games. The historical-mean baseline has an error of eighteen point eight one games.",
       "seconds": 11.9,
-      "slot_seconds": 10
+      "slot_seconds": 10,
+      "words": [
+        [
+          0.25,
+          "Across "
+        ],
+        [
+          0.625,
+          "thirteen "
+        ],
+        [
+          1.05,
+          "held-out "
+        ],
+        [
+          1.425,
+          "seasons, "
+        ],
+        [
+          2.25,
+          "regression "
+        ],
+        [
+          2.825,
+          "has "
+        ],
+        [
+          3.0,
+          "a "
+        ],
+        [
+          3.112,
+          "mean "
+        ],
+        [
+          3.475,
+          "absolute "
+        ],
+        [
+          4.05,
+          "error "
+        ],
+        [
+          4.588,
+          "of "
+        ],
+        [
+          4.75,
+          "eighteen "
+        ],
+        [
+          5.25,
+          "point "
+        ],
+        [
+          5.562,
+          "four "
+        ],
+        [
+          5.862,
+          "three "
+        ],
+        [
+          6.1,
+          "games. "
+        ],
+        [
+          7.188,
+          "The "
+        ],
+        [
+          7.3,
+          "historical-mean "
+        ],
+        [
+          8.1,
+          "baseline "
+        ],
+        [
+          8.863,
+          "has "
+        ],
+        [
+          9.037,
+          "an "
+        ],
+        [
+          9.162,
+          "error "
+        ],
+        [
+          9.525,
+          "of "
+        ],
+        [
+          9.688,
+          "eighteen "
+        ],
+        [
+          10.2,
+          "point "
+        ],
+        [
+          10.475,
+          "eight "
+        ],
+        [
+          10.7,
+          "one "
+        ],
+        [
+          10.925,
+          "games."
+        ]
+      ]
     },
     {
       "file": "episode-02-cue-37.mp3",
       "text": "That improvement is small. Regression also has worse root mean squared error, so these predictors have not demonstrated a clear forecasting advantage.",
       "seconds": 9.85,
-      "slot_seconds": 10
+      "slot_seconds": 10,
+      "words": [
+        [
+          0.275,
+          "That "
+        ],
+        [
+          0.487,
+          "improvement "
+        ],
+        [
+          1.113,
+          "is "
+        ],
+        [
+          1.262,
+          "small. "
+        ],
+        [
+          2.237,
+          "Regression "
+        ],
+        [
+          2.837,
+          "also "
+        ],
+        [
+          3.225,
+          "has "
+        ],
+        [
+          3.438,
+          "worse "
+        ],
+        [
+          3.812,
+          "root "
+        ],
+        [
+          4.1,
+          "mean "
+        ],
+        [
+          4.388,
+          "squared "
+        ],
+        [
+          4.8,
+          "error, "
+        ],
+        [
+          5.513,
+          "so "
+        ],
+        [
+          5.675,
+          "these "
+        ],
+        [
+          5.925,
+          "predictors "
+        ],
+        [
+          6.5,
+          "have "
+        ],
+        [
+          6.7,
+          "not "
+        ],
+        [
+          6.925,
+          "demonstrated "
+        ],
+        [
+          7.6,
+          "a "
+        ],
+        [
+          7.713,
+          "clear "
+        ],
+        [
+          8.062,
+          "forecasting "
+        ],
+        [
+          8.75,
+          "advantage."
+        ]
+      ]
     },
     {
       "file": "episode-02-cue-38.mp3",
       "text": "The notebook lets us enter an age and debut score for a scenario. It labels extrapolation and keeps the raw prediction visible before rounding.",
       "seconds": 9.45,
-      "slot_seconds": 10
+      "slot_seconds": 10,
+      "words": [
+        [
+          0.25,
+          "The "
+        ],
+        [
+          0.325,
+          "notebook "
+        ],
+        [
+          0.775,
+          "lets "
+        ],
+        [
+          1.012,
+          "us "
+        ],
+        [
+          1.188,
+          "enter "
+        ],
+        [
+          1.55,
+          "an "
+        ],
+        [
+          1.725,
+          "age "
+        ],
+        [
+          2.2,
+          "and "
+        ],
+        [
+          2.325,
+          "debut "
+        ],
+        [
+          2.763,
+          "score "
+        ],
+        [
+          3.175,
+          "for "
+        ],
+        [
+          3.3,
+          "a "
+        ],
+        [
+          3.4,
+          "scenario. "
+        ],
+        [
+          4.525,
+          "It "
+        ],
+        [
+          4.7,
+          "labels "
+        ],
+        [
+          5.1,
+          "extrapolation "
+        ],
+        [
+          6.325,
+          "and "
+        ],
+        [
+          6.475,
+          "keeps "
+        ],
+        [
+          6.775,
+          "the "
+        ],
+        [
+          6.912,
+          "raw "
+        ],
+        [
+          7.175,
+          "prediction "
+        ],
+        [
+          7.675,
+          "visible "
+        ],
+        [
+          8.1,
+          "before "
+        ],
+        [
+          8.45,
+          "rounding."
+        ]
+      ]
     },
     {
       "file": "episode-02-cue-39.mp3",
       "text": "Here are the distributions, age relationships, and prediction errors. Take a brief look, then return to the main lesson about uncertainty.",
       "seconds": 8.78,
-      "slot_seconds": 10
+      "slot_seconds": 10,
+      "words": [
+        [
+          0.275,
+          "Here "
+        ],
+        [
+          0.525,
+          "are "
+        ],
+        [
+          0.613,
+          "the "
+        ],
+        [
+          0.7,
+          "distributions, "
+        ],
+        [
+          1.863,
+          "age "
+        ],
+        [
+          2.175,
+          "relationships, "
+        ],
+        [
+          3.05,
+          "and "
+        ],
+        [
+          3.175,
+          "prediction "
+        ],
+        [
+          3.625,
+          "errors. "
+        ],
+        [
+          4.612,
+          "Take "
+        ],
+        [
+          4.812,
+          "a "
+        ],
+        [
+          4.875,
+          "brief "
+        ],
+        [
+          5.175,
+          "look, "
+        ],
+        [
+          5.75,
+          "then "
+        ],
+        [
+          5.975,
+          "return "
+        ],
+        [
+          6.4,
+          "to "
+        ],
+        [
+          6.487,
+          "the "
+        ],
+        [
+          6.575,
+          "main "
+        ],
+        [
+          6.875,
+          "lesson "
+        ],
+        [
+          7.25,
+          "about "
+        ],
+        [
+          7.55,
+          "uncertainty."
+        ]
+      ]
     },
     {
       "file": "episode-02-cue-40.mp3",
       "text": "The PMF describes exact historical positions, and the CDF answers by which game. A density histogram offers a grouped approximation.",
       "seconds": 10.2,
-      "slot_seconds": 10
+      "slot_seconds": 10,
+      "words": [
+        [
+          0.25,
+          "The "
+        ],
+        [
+          0.362,
+          "PMF "
+        ],
+        [
+          1.05,
+          "describes "
+        ],
+        [
+          1.65,
+          "exact "
+        ],
+        [
+          2.125,
+          "historical "
+        ],
+        [
+          2.7,
+          "positions, "
+        ],
+        [
+          3.75,
+          "and "
+        ],
+        [
+          3.862,
+          "the "
+        ],
+        [
+          3.962,
+          "CDF "
+        ],
+        [
+          4.612,
+          "answers "
+        ],
+        [
+          5.1,
+          "by "
+        ],
+        [
+          5.312,
+          "which "
+        ],
+        [
+          5.6,
+          "game. "
+        ],
+        [
+          6.513,
+          "A "
+        ],
+        [
+          6.638,
+          "density "
+        ],
+        [
+          7.15,
+          "histogram "
+        ],
+        [
+          7.875,
+          "offers "
+        ],
+        [
+          8.3,
+          "a "
+        ],
+        [
+          8.425,
+          "grouped "
+        ],
+        [
+          8.8,
+          "approximation."
+        ]
+      ]
     },
     {
       "file": "episode-02-cue-41.mp3",
       "text": "Correlation describes association. Regression turns selected inputs into a prediction, but its usefulness must be tested against a simple baseline.",
       "seconds": 10.35,
-      "slot_seconds": 10
+      "slot_seconds": 10,
+      "words": [
+        [
+          0.25,
+          "Correlation "
+        ],
+        [
+          0.95,
+          "describes "
+        ],
+        [
+          1.65,
+          "association. "
+        ],
+        [
+          3.087,
+          "Regression "
+        ],
+        [
+          3.712,
+          "turns "
+        ],
+        [
+          4.075,
+          "selected "
+        ],
+        [
+          4.6,
+          "inputs "
+        ],
+        [
+          5.05,
+          "into "
+        ],
+        [
+          5.287,
+          "a "
+        ],
+        [
+          5.35,
+          "prediction, "
+        ],
+        [
+          6.35,
+          "but "
+        ],
+        [
+          6.487,
+          "its "
+        ],
+        [
+          6.688,
+          "usefulness "
+        ],
+        [
+          7.388,
+          "must "
+        ],
+        [
+          7.638,
+          "be "
+        ],
+        [
+          7.763,
+          "tested "
+        ],
+        [
+          8.363,
+          "against "
+        ],
+        [
+          8.775,
+          "a "
+        ],
+        [
+          8.887,
+          "simple "
+        ],
+        [
+          9.25,
+          "baseline."
+        ]
+      ]
     },
     {
       "file": "episode-02-cue-42.mp3",
       "text": "Here, age and debut points leave substantial uncertainty. We learned how to build an honest model, and how to recognize its limits.",
       "seconds": 8.8,
-      "slot_seconds": 10
+      "slot_seconds": 10,
+      "words": [
+        [
+          0.275,
+          "Here, "
+        ],
+        [
+          0.713,
+          "age "
+        ],
+        [
+          1.1,
+          "and "
+        ],
+        [
+          1.225,
+          "debut "
+        ],
+        [
+          1.65,
+          "points "
+        ],
+        [
+          2.2,
+          "leave "
+        ],
+        [
+          2.538,
+          "substantial "
+        ],
+        [
+          3.225,
+          "uncertainty. "
+        ],
+        [
+          4.425,
+          "We "
+        ],
+        [
+          4.575,
+          "learned "
+        ],
+        [
+          4.85,
+          "how "
+        ],
+        [
+          5.013,
+          "to "
+        ],
+        [
+          5.1,
+          "build "
+        ],
+        [
+          5.338,
+          "an "
+        ],
+        [
+          5.475,
+          "honest "
+        ],
+        [
+          5.925,
+          "model, "
+        ],
+        [
+          6.625,
+          "and "
+        ],
+        [
+          6.75,
+          "how "
+        ],
+        [
+          6.95,
+          "to "
+        ],
+        [
+          7.075,
+          "recognize "
+        ],
+        [
+          7.65,
+          "its "
+        ],
+        [
+          7.85,
+          "limits."
+        ]
+      ]
     }
   ]
 }

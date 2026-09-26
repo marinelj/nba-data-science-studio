@@ -37,7 +37,7 @@ def narration_clips(cues):
     manifest = json.loads((AUDIO / "narration-manifest.json").read_text())
     if [clip["text"] for clip in manifest["clips"]] != [cue["text"] for cue in cues]:
         raise ValueError("Narration audio is stale. Run: uv run python/build_narration_audio.py")
-    return [data_uri(AUDIO / clip["file"], "audio/mpeg") for clip in manifest["clips"]]
+    return manifest["clips"]
 
 
 def integer_words(n):
@@ -193,13 +193,16 @@ def build_notebook(results):
 
 def build_html(results, seasons, cues, steps):
     template = (PYTHON / "course_template.html").read_text()
+    clips = narration_clips(cues)
     replacements = {
         "__RESULTS_JSON__": json.dumps(results, separators=(",", ":")),
         "__SEASONS_JSON__": json.dumps(seasons, separators=(",", ":")),
         "__CUES_JSON__": json.dumps(cues, separators=(",", ":")),
         "__STEPS_JSON__": json.dumps(steps, separators=(",", ":")),
         # Embedded, because Jupyter's /files/ sandboxes HTML pages and their own requests arrive logged out.
-        "__AUDIO_JSON__": json.dumps(narration_clips(cues)),
+        "__AUDIO_JSON__": json.dumps([data_uri(AUDIO / clip["file"], "audio/mpeg") for clip in clips]),
+        "__WORDS_JSON__": json.dumps([{"d": clip["seconds"], "w": clip["words"]} for clip in clips],
+                                     separators=(",", ":")),
         "__FIGURES_JSON__": json.dumps([data_uri(IMAGES / name, "image/png") for name in [
             "01-empirical-pmf-cdf.png", "02-age-correlations.png",
             "03-regression-backtest.png", "04-schedule-and-density.png"]]),

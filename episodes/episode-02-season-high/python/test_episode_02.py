@@ -11,7 +11,7 @@ import pandas as pd
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 
-from build_assets import AUDIO, DATA, audio_name, build_cues, integer_words, narration_clips, spoken_number
+from build_assets import AUDIO, DATA, audio_name, build_cues, data_uri, integer_words, narration_clips, spoken_number
 from fetch_data import prepare_log, season_summary
 from episode_02_season_high import empirical_distribution, fit_ols, load_data, walk_forward
 
@@ -85,9 +85,17 @@ class EpisodeTests(unittest.TestCase):
         clips = narration_clips(cues)
         self.assertEqual(len(clips), len(cues))
         for number, clip in enumerate(clips, 1):
-            header, payload = clip.split(",", 1)
+            header, payload = data_uri(AUDIO / clip["file"], "audio/mpeg").split(",", 1)
             self.assertEqual(header, "data:audio/mpeg;base64", number)
             self.assertEqual(base64.b64decode(payload), (AUDIO / audio_name(number)).read_bytes(), number)
+
+    def test_word_timings_cover_each_cue_in_order(self):
+        for number, clip in enumerate(narration_clips(build_cues(json.loads((DATA / "results.json").read_text()))), 1):
+            starts = [start for start, _ in clip["words"]]
+            self.assertEqual("".join(word for _, word in clip["words"]).strip(), clip["text"], number)
+            self.assertEqual(starts, sorted(starts), f"cue {number} word timings move backwards")
+            self.assertGreaterEqual(starts[0], 0, number)
+            self.assertLess(starts[-1], clip["seconds"], f"cue {number} starts a word after the audio ends")
 
     def test_stale_narration_is_rejected(self):
         cues = build_cues(json.loads((DATA / "results.json").read_text()))
