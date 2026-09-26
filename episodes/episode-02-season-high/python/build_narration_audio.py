@@ -24,6 +24,22 @@ MODEL = "hexgrad/Kokoro-82M"
 SAMPLE_RATE = 24_000
 
 
+def spoken_words(result, offset, fallback):
+    """Group Kokoro's per-token timestamps into words, keeping trailing punctuation and spacing."""
+    words, pending, start = [], "", None
+    for token in result.tokens:
+        if start is None and token.start_ts is not None:
+            start = float(token.start_ts) + offset
+        pending += token.text + token.whitespace
+        if token.whitespace or token is result.tokens[-1]:
+            words.append([round(start if start is not None else fallback, 3), pending])
+            fallback = words[-1][0]
+            pending, start = "", None
+    if pending:
+        words.append([round(fallback, 3), pending])
+    return words
+
+
 def render(cues, voice, speed):
     pipeline = KPipeline(lang_code="a", repo_id=MODEL)
     AUDIO.mkdir(parents=True, exist_ok=True)
@@ -31,12 +47,20 @@ def render(cues, voice, speed):
         old.unlink()
     clips = []
     for number, cue in enumerate(cues, 1):
-        audio = np.concatenate([result.audio.numpy() for result in pipeline(cue["text"], voice=voice, speed=speed)])
+        chunks, words, offset = [], [], 0.0
+        for result in pipeline(cue["text"], voice=voice, speed=speed):
+            words += spoken_words(result, offset, words[-1][0] if words else 0.0)
+            chunks.append(result.audio.numpy())
+            offset += len(chunks[-1]) / SAMPLE_RATE
+        audio = np.concatenate(chunks)
+        spoken = "".join(word[1] for word in words).strip()
+        if spoken != cue["text"]:
+            raise ValueError(f"Cue {number} word timings do not reproduce the subtitle:\n{spoken!r}\n{cue['text']!r}")
         sf.write(AUDIO / audio_name(number), audio, SAMPLE_RATE, format="MP3")
         seconds = round(len(audio) / SAMPLE_RATE, 2)
         clips.append({"file": audio_name(number), "text": cue["text"], "seconds": seconds,
-                      "slot_seconds": cue["end"] - cue["start"]})
-        print(f"{number:02d} {seconds:5.2f}s  {cue['text'][:70]}")
+                      "slot_seconds": cue["end"] - cue["start"], "words": words})
+        print(f"{number:02d} {seconds:5.2f}s {len(words):3d} words  {cue['text'][:55]}")
     manifest = {"model": MODEL, "kokoro_version": version("kokoro"), "voice": voice, "speed": speed, "clips": clips}
     (AUDIO / "narration-manifest.json").write_text(json.dumps(manifest, indent=2) + "\n")
     return clips
