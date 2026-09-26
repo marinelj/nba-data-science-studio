@@ -40,13 +40,30 @@ def spoken_words(result, offset, fallback):
     return words
 
 
+def reusable(voice, speed):
+    """Kokoro output is not byte-identical between runs, so keep clips whose text, voice and speed are unchanged."""
+    manifest = AUDIO / "narration-manifest.json"
+    if not manifest.exists():
+        return {}
+    previous = json.loads(manifest.read_text())
+    if previous.get("voice") != voice or previous.get("speed") != speed or "words" not in previous["clips"][0]:
+        return {}
+    return {clip["text"]: clip for clip in previous["clips"]}
+
+
 def render(cues, voice, speed):
-    pipeline = KPipeline(lang_code="a", repo_id=MODEL)
+    pipeline = None
+    kept = reusable(voice, speed)
     AUDIO.mkdir(parents=True, exist_ok=True)
-    for old in AUDIO.glob("episode-02-cue-*.mp3"):
-        old.unlink()
     clips = []
     for number, cue in enumerate(cues, 1):
+        unchanged = kept.get(cue["text"])
+        if unchanged and unchanged["file"] == audio_name(number) and (AUDIO / audio_name(number)).exists():
+            clips.append(unchanged)
+            print(f"{number:02d} {unchanged['seconds']:5.2f}s  kept     {cue['text'][:55]}")
+            continue
+        if pipeline is None:
+            pipeline = KPipeline(lang_code="a", repo_id=MODEL)
         chunks, words, offset = [], [], 0.0
         for result in pipeline(cue["text"], voice=voice, speed=speed):
             words += spoken_words(result, offset, words[-1][0] if words else 0.0)
@@ -61,6 +78,8 @@ def render(cues, voice, speed):
         clips.append({"file": audio_name(number), "text": cue["text"], "seconds": seconds,
                       "slot_seconds": cue["end"] - cue["start"], "words": words})
         print(f"{number:02d} {seconds:5.2f}s {len(words):3d} words  {cue['text'][:55]}")
+    for stale in set(AUDIO.glob("episode-02-cue-*.mp3")) - {AUDIO / clip["file"] for clip in clips}:
+        stale.unlink()
     manifest = {"model": MODEL, "kokoro_version": version("kokoro"), "voice": voice, "speed": speed, "clips": clips}
     (AUDIO / "narration-manifest.json").write_text(json.dumps(manifest, indent=2) + "\n")
     return clips

@@ -52,7 +52,7 @@ We import pandas, NumPy, and Matplotlib. Our cached NBA responses keep the recor
 
 14
 00:02:10,000 --> 00:02:20,000
-The download script uses the third-party nba_api wrapper to request official NBA player and team game logs, limited to regular-season games.
+The download script uses the third-party nba_api wrapper to request LeBron's own official game logs and his team's schedules, limited to regular-season games.
 
 15
 00:02:20,000 --> 00:02:30,000
@@ -80,7 +80,7 @@ These are different quantities. The correlation uses debut FGM. The regression u
 
 21
 00:03:20,000 --> 00:03:30,000
-The dataset has twenty-three seasons, beginning in two thousand three. We reconcile every player's game count, points, and FGM against NBA season totals.
+The dataset has twenty-three seasons, beginning in two thousand three. For each one, we check LeBron's games, points, and field goals made against his official NBA totals.
 
 22
 00:03:30,000 --> 00:03:40,000

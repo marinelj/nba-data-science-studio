@@ -1218,92 +1218,100 @@
     },
     {
       "file": "episode-02-cue-14.mp3",
-      "text": "The download script uses the third-party nba_api wrapper to request official NBA player and team game logs, limited to regular-season games.",
-      "seconds": 10.55,
+      "text": "The download script uses the third-party nba_api wrapper to request LeBron's own official game logs and his team's schedules, limited to regular-season games.",
+      "seconds": 11.28,
       "slot_seconds": 10,
       "words": [
         [
-          0.25,
+          0.275,
           "The "
         ],
         [
-          0.362,
+          0.388,
           "download "
         ],
         [
-          0.9,
+          0.925,
           "script "
         ],
         [
-          1.387,
+          1.45,
           "uses "
         ],
         [
-          1.825,
+          1.9,
           "the "
         ],
         [
-          1.975,
+          2.05,
           "third-party "
         ],
         [
-          2.688,
+          2.763,
           "nba_api "
         ],
         [
-          3.95,
+          4.075,
           "wrapper "
         ],
         [
-          4.675,
+          4.825,
           "to "
         ],
         [
-          4.825,
+          4.975,
           "request "
         ],
         [
-          5.275,
+          5.4,
+          "LeBron's "
+        ],
+        [
+          6.025,
+          "own "
+        ],
+        [
+          6.175,
           "official "
         ],
         [
-          5.75,
-          "NBA "
-        ],
-        [
-          6.3,
-          "player "
-        ],
-        [
-          6.787,
-          "and "
-        ],
-        [
-          6.938,
-          "team "
-        ],
-        [
-          7.25,
+          6.575,
           "game "
         ],
         [
-          7.5,
-          "logs, "
+          6.875,
+          "logs "
         ],
         [
-          8.312,
+          7.412,
+          "and "
+        ],
+        [
+          7.537,
+          "his "
+        ],
+        [
+          7.7,
+          "team's "
+        ],
+        [
+          8.025,
+          "schedules, "
+        ],
+        [
+          9.0,
           "limited "
         ],
         [
-          8.725,
+          9.45,
           "to "
         ],
         [
-          8.85,
+          9.575,
           "regular-season "
         ],
         [
-          9.575,
+          10.3,
           "games."
         ]
       ]
@@ -1906,8 +1914,8 @@
     },
     {
       "file": "episode-02-cue-21.mp3",
-      "text": "The dataset has twenty-three seasons, beginning in two thousand three. We reconcile every player's game count, points, and FGM against NBA season totals.",
-      "seconds": 10.72,
+      "text": "The dataset has twenty-three seasons, beginning in two thousand three. For each one, we check LeBron's games, points, and field goals made against his official NBA totals.",
+      "seconds": 11.32,
       "slot_seconds": 10,
       "words": [
         [
@@ -1923,83 +1931,99 @@
           "has "
         ],
         [
-          1.025,
+          1.038,
           "twenty-three "
         ],
         [
-          1.525,
+          1.55,
           "seasons, "
         ],
         [
-          2.3,
+          2.325,
           "beginning "
         ],
         [
-          2.75,
+          2.825,
           "in "
         ],
         [
-          2.85,
+          2.975,
           "two "
         ],
         [
-          3.025,
+          3.175,
           "thousand "
         ],
         [
-          3.425,
+          3.575,
           "three. "
         ],
         [
-          4.3,
-          "We "
+          4.537,
+          "For "
         ],
         [
-          4.45,
-          "reconcile "
+          4.7,
+          "each "
         ],
         [
-          5.013,
-          "every "
+          4.95,
+          "one, "
         ],
         [
-          5.325,
-          "player's "
+          5.5,
+          "we "
         ],
         [
-          5.725,
-          "game "
+          5.662,
+          "check "
         ],
         [
-          6.025,
-          "count, "
+          5.925,
+          "LeBron's "
         ],
         [
-          6.638,
+          6.475,
+          "games, "
+        ],
+        [
+          7.213,
           "points, "
         ],
         [
-          7.325,
+          7.675,
           "and "
         ],
         [
-          7.487,
-          "FGM "
+          7.812,
+          "field "
         ],
         [
-          8.262,
+          8.125,
+          "goals "
+        ],
+        [
+          8.512,
+          "made "
+        ],
+        [
+          8.738,
           "against "
         ],
         [
-          8.662,
+          9.088,
+          "his "
+        ],
+        [
+          9.225,
+          "official "
+        ],
+        [
+          9.762,
           "NBA "
         ],
         [
-          9.338,
-          "season "
-        ],
-        [
-          9.7,
+          10.3,
           "totals."
         ]
       ]
