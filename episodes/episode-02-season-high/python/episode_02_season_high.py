@@ -8,8 +8,6 @@ import argparse
 import json
 from pathlib import Path
 
-import matplotlib
-matplotlib.use("Agg")
 import matplotlib.pyplot as plt
 import numpy as np
 import pandas as pd
@@ -242,6 +240,10 @@ def main(age=None, debut_points=None):
 
 
 if __name__ == "__main__":
+    # Only the command line needs a headless backend; importing must leave a notebook's inline plotting alone.
+    import matplotlib
+
+    matplotlib.use("Agg")
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--age", type=float)
     parser.add_argument("--debut-points", type=float)
