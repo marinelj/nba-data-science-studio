@@ -32,7 +32,7 @@ In Python, normalized value counts build the PMF. A cumulative sum builds the CD
 
 We import pandas, NumPy, and Matplotlib. Our cached NBA responses keep the recording reproducible, so we do not wait for downloads on camera.
 
-The download script uses the third-party nba_api wrapper to request official NBA player and team game logs, limited to regular-season games.
+The download script uses the third-party nba_api wrapper to request LeBron's own official game logs and his team's schedules, limited to regular-season games.
 
 We parse dates and sort chronologically. Then we number every team game. Missing a game does not pause the team's season counter.
 
@@ -46,7 +46,7 @@ Age is measured on his first appearance that season. We also record debut field 
 
 These are different quantities. The correlation uses debut FGM. The regression uses debut points. Season-high points help define the target, but never enter the predictors.
 
-The dataset has twenty-three seasons, beginning in two thousand three. We reconcile every player's game count, points, and FGM against NBA season totals.
+The dataset has twenty-three seasons, beginning in two thousand three. For each one, we check LeBron's games, points, and field goals made against his official NBA totals.
 
 Only twenty seasons contain eighty-two team games. Three contain sixty-six, seventy-one, and seventy-two games, so we preserve their actual schedule lengths.
 
